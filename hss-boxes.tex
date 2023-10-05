@@ -1,0 +1,146 @@
+%\documentclass{amsart}
+%\pdfoutput=1
+%\usepackage{array}
+%\usepackage{longtable}
+%\usepackage{xparse}
+%\usepackage{colortbl}
+%\usepackage{booktabs}
+%\usepackage{lie-hasse}
+%\NewDocumentCommand\pr{m}{\ensuremath{\left(#1\right)}}
+%\NewDocumentCommand\curly{m}{\ensuremath{\left\{#1\right\}}}
+%\NewDocumentCommand\of{m}{\ensuremath{\!\pr{#1}}}
+%\NewDocumentCommand\Gr{smm}%
+%{%
+%\ensuremath{\operatorname{Gr}_{#2}\IfBooleanTF{#1}{\of{#3}}{#3}}%
+%}%
+%\newcolumntype{C}{@{}>{\columncolor[gray]{.9}}>{$}c<{$}@{}}
+%\newcolumntype{L}{@{}>{\columncolor[gray]{.9}}>{$}l<{$}@{}}
+%\newcolumntype{R}{@{}>{\columncolor[gray]{.9}}>{$}r<{$}@{}}
+%\arrayrulecolor{white}
+%\setlength{\arrayrulewidth}{.12em}
+%\NewDocumentEnvironment{longtabl}{m}%
+%{%
+%\renewcommand{\arraystretch}{1.5}%
+%\begin{longtable}{#1}%
+%}%
+%{%
+%\end{longtable}%
+%\renewcommand{\arraystretch}{1}%
+%}%
+%\NewDocumentCommand\C{o}%
+%{%
+%	\ensuremath%
+%	{%
+%		\IfValueTF{#1}%
+%		{%
+%			\mathbb{C}^{#1}%
+%		}%
+%		{%
+%			\mathbb{C}%
+%		}%
+%	}%
+%}%
+%\NewDocumentCommand\Proj{m}{\ensuremath{\mathbb{P}^{#1}}}
+%\begin{document}
+\begingroup
+\tikzset{/Dynkin diagram/ordering=Carter}
+%\tikzset{/Lie Hasse diagram/ordering=Carter}
+\newcommand{\hasseEntry}[1]%
+{%%
+	&%
+	\multicolumn{3}%
+	{%
+		>{\columncolor[gray]{.96}\centering\arraybackslash}%
+		m{\hasseEntryWidth}%
+	}%
+	{%
+		\begin{tikzpicture}[%
+			background rectangle/.style={},%
+			background top/.style={%
+				draw=black,%
+				opacity=0,%
+				line width=1ex},%
+			framed,%
+			show background top]%
+		\hasse[three D=false]#1%
+		\end{tikzpicture}%
+	}%
+}%%
+\small%
+\setlength{\tabcolsep}{4pt}%
+\setlength{\extrarowheight}{0pt}%
+\newlength{\hasseEntryWidth}%
+\setlength{\hasseEntryWidth}{11cm}%
+\addtolength{\hasseEntryWidth}{16pt}%
+\begin{longtabl}{%
+>{\columncolor[gray]{.9}}>{$}m{1.5em}<{$}%
+>{\columncolor[gray]{.93}}m{3cm}%
+>{\columncolor[gray]{.9}\raggedleft$}%
+m{2cm}%
+<{$}%
+>{\columncolor[gray]{.93}}%
+m{6cm}%
+}%
+\caption{Hasse diagrams of the cominuscule varieties}%
+\label{table:boxes}%
+\\
+\toprule
+G&\(G/P\)&\operatorname{dim}&\text{description}\\
+\midrule
+\endfirsthead
+\toprule
+G&\(G/P\)&\operatorname{dim}&\text{description}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+A_r&\dynkin{A}{**.*x*.**}&k(r+1-k)&Grassmannian of $k$-planes in $\C[r+1]$\\%
+\hasseEntry{A{*****x**}}\\
+B_r&\dynkin[parabolic=1]{B}{}&2r-1&quadric hypersurface in $\Proj{2r}$\\
+\hasseEntry{B{x*******}}%
+\\
+\pagebreak
+C_r&\dynkin[parabolic=16]{C}{}&\frac{r(r+1)}{2}&Lagrangian $r$-planes in $\C[2r]$\\
+\hasseEntry{C{*******x}}\\
+D_r&\dynkin[parabolic=1]{D}{}&2r-2&quadric hypersurface in $\Proj{2r-1}$\\
+\hasseEntry{D{x*******}}\\
+\pagebreak
+D_r&\dynkin[parabolic=32]{D}{}&\frac{r(r-1)}{2}&null $r$-planes in $\C[2r]$ \\
+\hasseEntry{D{*******x}}\\
+E_6&\dynkin[parabolic=1]{E}{6}&16&complexified octave projective plane\\
+&
+\multicolumn{3}{>{\columncolor[gray]{.96}}c}%
+{%
+		\begin{tikzpicture}[%
+			background rectangle/.style={},%
+			background top/.style={%
+				draw=black,%
+				opacity=0,%
+				line width=1ex},%
+			framed,%
+			show background top]%
+			\hasse[three D=false,z shift=-.2]E{x*****}%
+		\end{tikzpicture}%
+}%
+\\
+\pagebreak
+E_7 &\dynkin[ordering=Carter]E{x******}&27&null octave 3-planes in octave 6-space\\
+&
+\multicolumn{3}{>{\columncolor[gray]{.96}}c}%
+{%
+		\begin{tikzpicture}[%
+			background rectangle/.style={},%
+			background top/.style={%
+				draw=black,%
+				opacity=0,%
+				line width=1ex},%
+			framed,%
+			show background top]%
+			\hasse[three D=false,z shift=-.3]E{x******}%
+		\end{tikzpicture}%
+}%
+\end{longtabl}
+\endgroup
+%\end{document}

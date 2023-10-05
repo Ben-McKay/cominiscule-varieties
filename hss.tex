@@ -1,0 +1,68 @@
+%\documentclass{amsart}
+%\pdfoutput=1
+%\usepackage{array}
+%\usepackage{longtable}
+%\usepackage{xparse}
+%\usepackage{colortbl}
+%\usepackage{booktabs}
+%\usepackage{dynkin-diagrams}
+%\NewDocumentCommand\pr{m}{\ensuremath{\left(#1\right)}}
+%\NewDocumentCommand\curly{m}{\ensuremath{\left\{#1\right\}}}
+%\NewDocumentCommand\of{m}{\ensuremath{\!\pr{#1}}}
+%\newcolumntype{C}{>{\columncolor[gray]{.9}}>{$}c<{$}}
+%\newcolumntype{L}{>{\columncolor[gray]{.9}}>{$}l<{$}}
+%\newcolumntype{R}{>{\columncolor[gray]{.9}}>{$}r<{$}}
+%\arrayrulecolor{white}
+%\setlength{\arrayrulewidth}{.12em}
+%\NewDocumentEnvironment{longtabl}{m}%
+%{%
+%\renewcommand{\arraystretch}{2}%
+%\begin{longtable}{#1}%
+%}%
+%{%
+%\end{longtable}%
+%\renewcommand{\arraystretch}{1}%
+%}%
+%\NewDocumentCommand\C{o}%
+%{%
+%\IfValueTF{#1}%
+%{%
+%	\ensuremath{\mathbb{C}^{#1}}%
+%}%
+%{%
+%	\ensuremath{\mathbb{C}}%
+%}%
+%}%
+%\NewDocumentCommand\Proj{m}{\ensuremath{\mathbb{P}^{#1}}}
+%\begin{document}
+\begingroup
+\small
+\begin{longtabl}{@{}%
+>{\columncolor[gray]{.9}$}r<{$}%
+>{\columncolor[gray]{.93}}p{2.6cm}%
+>{\columncolor[gray]{.9}$}r<{$}%
+>{\columncolor[gray]{.93}}l@{}}
+\toprule
+G&\(G/P\)&\operatorname{dim}&\text{description}\\
+\midrule
+\endfirsthead
+\toprule
+G&\(G/P\)&\operatorname{dim}&\text{description}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
+A_r&\dynkin{A}{**.*x*.**}&k(r+1-k)&Grassmannian of $k$-planes in $\C[r+1]$
+\\
+B_r&\dynkin[parabolic=1]{B}{}&2r-1&quadric hypersurface in $\Proj{2r}$\\
+C_r&\dynkin[parabolic=16]{C}{}&\frac{r(r+1)}{2}&space of Lagrangian $r$-planes in $\C[2r]$\\
+D_r&\dynkin[parabolic=1]{D}{}&2r-2&quadric hypersurface in $\Proj{2r-1}$\\
+D_r&\dynkin[parabolic=32]{D}{}&\frac{r(r-1)}{2}& %one component of the variety of 
+space of null $r$-planes in $\C[2r]$ \\
+E_6&\dynkin[parabolic=1]{E}{6}&16&complexified octave projective plane\\
+E_7 &\dynkin[parabolic=64]{E}{7}&27&space of null octave \(3\)-planes in octave \(6\)-space
+\end{longtabl}
+\endgroup
+%\end{document}

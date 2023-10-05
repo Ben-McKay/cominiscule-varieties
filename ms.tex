@@ -26,8 +26,9 @@
 \email{b.mckay@ucc.ie}
 
 \thanks{This research was supported in part by the International Centre for Theoretical Sciences (ICTS) during a visit for participating in the program - Analytic and Algebraic Geometry (Code: ICTS/aag2018/03).
-This research was completed at the University of Catania, thanks to the hospitality of the university and of Francesco Russo.
-Thanks to Indranil Biswas, Anca \texorpdfstring{Musta\c{t}\u{a}}{Mustata} and Andrei \texorpdfstring{Musta\c{t}\u{a}}{Mustata} for help with algebraic geometry.}
+This research was largely written at the University of Catania, thanks to the hospitality of the university and of Francesco Russo.
+Thanks to Indranil Biswas, Anca \texorpdfstring{Musta\c{t}\u{a}}{Mustata} and Andrei \texorpdfstring{Musta\c{t}\u{a}}{Mustata} for help with algebraic geometry.
+This article/publication is based upon work from COST Action CaLISTA, CA21109, supported by COST (European Cooperation in Science and Technology) \url{www.cost.eu}.}
 \keywords{flag variety, Hermitian symmetric space}
 %\subjclass[2000]{Primary 53B21; Secondary 53C56, 53A55}
 \date{\today}
@@ -418,6 +419,7 @@ so \(\breve{X}\subseteq X\) is an obvious intersection of Schubert cells.
 \subsection{Flag varieties}
 A \emph{flag variety} \((X,G)\), also called a \emph{generalized flag variety} or a \emph{rational homogeneous variety}, is a complex projective variety \(X\) acted on transitively and holomorphically by a connected complex semisimple Lie group \(G\) \cite{Knapp:2002} p. 325.
 We will need to make use of ineffective flag varieties, i.e. \(G\) might not act faithfully on \(X\).
+A Lie group \(G\) acts \emph{almost effectively} on a manifold \(X\) if the elements of \(G\) fixing every point of \(X\) form a finite subgroup. 
 It is traditional to denote the stabilizer \(G^{x_0}\) of a point \(x_0 \in X\) as \(P\); the subgroup \(P\subseteq G\) is a connected complex linear algebraic subgroup.
 (A subgroup of \(G\) is \emph{parabolic} if it is the stabilizer of a point of a flag variety \((X,G)\) of \(G\), hence the use of the letter \(P\).)
 
@@ -434,7 +436,7 @@ X&=X_0 \times X_1 \times X_2 \times \dots \times X_s, \\
 G&=G_0 \times G_1 \times G_2 \times \dots \times G_s, 
 \end{align*}
 into irreducible flag varieties \(\pr{X_i, G_i}\), \(i>0\), and a point \(X_0=\set{x_0}\), unique up to permutation of the \((X_i,G_i)\) for \(i>0\) and isomorphism.
-The flag variety \((X,G)\) is effective if and only if all \((X_i,G_i))\) are effective, i.e. if and only if \(G_0\) is trivial and \(G_1,\dots,G_s\) are in adjoint form.
+The flag variety \((X,G)\) is effective if and only if all \((X_i,G_i)\) are effective, i.e. if and only if \(G_0=\set{1}\) is trivial and \(G_1,\dots,G_s\) are in adjoint form.
 \subsection{Cominuscule varieties}
 A flag variety is \emph{cominuscule} if \(\LieG/\LieP=T_{x_0} X\) is a sum of irreducible complex algebraic \(P\)-modules.
 This occurs just when there is a compact subgroup \(K\subseteq G\) so that \(\pr{X,K}\) is a compact Hermitian symmetric space \cite{Kostant:1961} p. 379 Proposition 8.2, \cite{Baston/Eastwood:1989} p. 26.
@@ -460,7 +462,7 @@ G&\(G/P\)&\operatorname{dim}&\text{description}\\
 \endfoot
 \bottomrule
 \endlastfoot
-A_r&\dynkin{A}{**.*x*.**}&k(r+1-k)&Grassmannian of $k$-planes in $\C[r+1]$
+A_r&\dynkin[labels={,,,k,,,}]{A}{**.*x*.**}&k(r+1-k)&Grassmannian of $k$-planes in $\C[r+1]$
 \\
 B_r&\dynkin[parabolic=1]{B}{}&2r-1&quadric hypersurface in $\Proj{2r}$\\
 C_r&\dynkin[parabolic=16]{C}{}&\frac{r(r+1)}{2}&space of Lagrangian $r$-planes in $\C[2r]$\\
@@ -473,29 +475,30 @@ E_7 &\dynkin[parabolic=64]{E}{7}&27&space of null octave \(3\)-planes in octave 
 \endgroup
 %% end input
 \subsection{Structure of linear algebraic groups}
+A complex linear map is \emph{unipotent} if its only eigenvalue is \(1\).
 A subgroup of a linear algebraic group is \emph{unipotent} if it consists of unipotent linear maps.
 Every complex linear algebraic group \(G\) has a \emph{unipotent radical}, the unique maximal unipotent normal subgroup, which is a closed complex linear algebraic subgroup \cite{Borel:1991} p. 85 Theorem 4.5, p. 86 Theorem 4.7, p. 157 11.21.
 
 A complex linear algebraic group is \emph{reductive} if it contains a Zariski dense compact subgroup \cite{Knapp:2002} p. 382 Proposition 7.15.
-Every complex linear algebraic group \(G\) has a \emph{reductive Levi factor}, i.e. a maximally reductive complex linear algebraic subgroup,  unique up to conjugacy  \cite{Knapp:2002} p. 478., so that \(G\) is a semidirect product of its reductive Levi factor and its unipotent radical.
+Every complex linear algebraic group \(G\) has a \emph{reductive Levi factor}, i.e. a maximally reductive complex linear algebraic subgroup,  unique up to conjugacy, so that \(G\) is a semidirect product of its reductive Levi factor and its unipotent radical \cite{Borel:1991} p. 158 11.22.
 Any Cartan subgroup is therefore a subgroup of the Levi factor, after perhaps a conjugacy.
 Every compact subgroup lies in a maximal compact subgroup, which is unique up to conjugacy, so lies in the Levi factor up to conjugacy \cite{Hilgert.Neeb:2012} p. 531 Theorem 14.1.3.
 After perhaps extending by some finite group of order a power of \(2\), the Weyl group embeds in \(G\) as a finite subgroup \cite{Tits:1966}, hence compact, so this group lies in the Levi factor up to conjugacy.
 
-\subsection{Structure of flag variety stabilizers}
-Take a flag variety \((X,G)\). 
-Take the stabilizer \(P\defeq G^{x_0}\) of a point \(x_0\in X\).
+\subsection{Parabolic subgroups}
+A Zariski closed subgroup \(P\subseteq G\) of a connected linear algebraic group \(G\) is \emph{parabolic} if \(X:=G/P\) is a projective variety, and this occurs just when \((X,G)\) is a flag variety, and just when \(P\) contains a maximal connected solvable subgroup \cite{Borel:1991} p. 148.
+Every parabolic subgroup is connected p. 197 Proposition 14.18.
 The unipotent radical of \(P\) is denoted \(\GN\subseteq P\), and a maximal reductive Levi factor is denoted \(\GZ\subseteq P\), so \(P=\GZ\ltimes\GN\).
 (This is potentially confusing; the reader might expect to write these as \(P_+\) and \(P_0\) since they lie in \(P\), but this notation is standard \cite{Cap/Slovak:2009} p. 293 theorem 3.2.1, and due to the presence of the grading of the Lie algebra of \(G\) which we will define.)
 A flag variety is cominuscule just when \(\GN\) is abelian \cite{Cap/Slovak:2009} p. 296 \S{}3.2.3.
 Denote the center of the unipotent radical by \(Z\defeq Z_{\GN}\).
-\subsection{Definition of the associated cominiscule}
-Every flag variety \(X=G/P\) has parabolic subgroup \(P:=G^{x_0}\) connected and containing a Borel subgroup \(B\subseteq P\) \cite{Borel:1991} p. 197 Proposition 14.18.
+\subsection{Opposite parabolic subgroups}
 All Borel subgroups of \(G\) are conjugate \cite{Borel:1991} p. 147 chapter IV 11.1, each containing a Cartan subgroup, hence the Lie algebra of \(P\) is a sum of root spaces with the Cartan subalgebra.
 Every automorphism of a root system arises from an automorphism of the associated semisimple Lie group.
 Hence there is an automorphism \(G\xrightarrow{a}G\) of \(G\) which yields \(\alpha\mapsto-\alpha\) in the root system.
-(We can define such an automorphism explicitly as \(e_{\alpha}\mapsto -e_{-\alpha}\) on root vectors in a Chevellay basis; see section~\vref{subsubsection:ChevalleyBases}.)
-Our automorphism sends \(P\) to its ``opposite'' \(aP\) parabolic subgroup, so gives \(P\cap aP=\GZ\) \cite{Cap/Slovak:2009} p. 294, \cite{Borel:1991} p. 198 Proposition 14.21
+(We can define such an automorphism explicitly as \(e_{\alpha}\mapsto -e_{-\alpha}\) on root vectors in a Chevalley basis; see section~\vref{subsubsection:ChevalleyBases}.)
+Our automorphism sends \(P\) to its \emph{opposite} \(aP\) parabolic subgroup, so gives \(P\cap aP=\GZ\) and \(G_+\cap aG_+=\set{1}\) and an open subset of \(G\) consists of elements uniquely expressed as a product \(p,q\in P\times aG_+\mapsto pq\in G\) \cite{Cap/Slovak:2009} p. 294, \cite{Borel:1991} p. 198 Proposition 14.21.
+\subsection{Definition of the associated cominiscule}
 Let \(\breve{G}\defeq\left<Z,aZ\right> \subseteq G\) be the subgroup generated by \(Z\cup aZ\), \(\breve{P} \defeq \breve{G} \cap P\), \(\breve{X} \defeq \breve{G}/\breve{P}\).
 Then \((\breve{X},\breve{G})\) is the \emph{associated cominuscule subvariety} through the point \(x_0\in X\).
 \subsection{Example: the general linear flag variety}
@@ -574,21 +577,23 @@ To be more precise, \(G_+\) consists of the matrices
 \]
 with determinant \(1\), up to rescaling by \(n^{\text{th}}\) roots of unity.
 But for each such matrix equivalence class, pick any representative and we can pick that root of unity uniquely to write it as an actual matrix with \(\lambda=1\), and similarly for \(Z\).
-Clearly \(\breve{G}\) has Lie algebra containing all root vectors of all \(P\)-maximal and \(P\)-minimal roots, and is generated by the one parameter subgroups of those root vectors.
+Clearly \(\breve{G}\) has Lie algebra containing all root vectors of all \(P\)-maximal and \(P\)-minimal roots, and is generated by the \(1\)-parameter subgroups of those root vectors.
 So it contains the root vectors of the root system generated by these, and the Cartan subgroup of that root system, hence a semisimple group.
 Note that \(P'\) preserves \(V_1\), \(V_2\), \(V_3\), and \(V_1\oplus V_4\), while
 \(G'\) preserves \(V_2\), \(V_3\) and \(V_1\oplus V_4\).
-So \(\breve{X}=\breve{G}/\breve{P}=G'/P'\) is the Grassmannian of linear subspace of dimension \(n_1\) inside \(V_1\oplus V_4\).
+So \(\breve{X}=\breve{G}/\breve{P}=G'/P'\) is the Grassmannian of linear subspaces of dimension \(n_1\) inside \(V_1\oplus V_4\).
 
 \subsection{Finding the associated cominiscule subvariety}
 We will prove~\vpageref{page:associated.cominuscule}:
 \begin{lemma}\label{lemma:associated.cominuscule}
 The complex homogeneous space \((\breve{X},\breve{G})\) is a positive dimensional homogeneously embedded cominuscule subvariety of \((X,G)\).
+If \((X,G)\) is almost effective then so is \((\breve{X},\breve{G})\).
 The Dynkin diagram of \((\breve{X},\breve{G})\) has one connected component for each connected component of the Dynkin diagram of \((X,G)\).
 \end{lemma}
 \subsection{Why the associated cominiscule subvariety matters}
-We will see \vpageref{subsection:Freedom} that the associated cominiscule subvariety of an irreducible flag variety \((X,G)\) has strictly maximal dimension symmetry group among subvarieties of \(X\) satisfying an open condition on tangent spaces of the smooth locus.
-We will see that all smooth subvarieties satisfying that open condition are homogeneous, and all but the associated cominiscule itself have smaller dimensional automorphism group than the associated cominiscule.
+We will see \vpageref{subsection:Freedom} that the associated cominiscule subvariety of an irreducible flag variety \((X,G)\) satisfies an open condition on its tangent spaces, which we call \emph{freedom}.
+We will see that the symmetry group of the associated cominiscule subvariety has strictly maximal dimension among symmetry groups of subvarieties of \(X\) with free smooth locus.
+We will see that all free smooth subvarieties are homogeneous, evidence for the conjecture that the associated cominiscule subvariety is the unique free smooth subvariety.
 \section{Statement of the theorem}
 \begin{theorem}
 With \(\dynkin{A}{o}\) denoting a node which could be either a \(\dynkin{A}{x}\) or \(\dynkin{A}{*}\), the associated cominuscule subvarieties are:
@@ -713,7 +718,7 @@ With \(\dynkin{A}{o}\) denoting a node which could be either a \(\dynkin{A}{x}\)
 \section{Reducing to root systems}
 \subsection{Gradings}
 A root system with a basis of simple roots \(\alpha_1,\dots,\alpha_r\) is graded: each root \(\sum n_i \alpha_i\) has grade \(\sum_i n_i\).
-For a flag variety \(X=G/P\), the root system is also \emph{\(P\)-graded} by the same sum, but only over the noncompact simple roots.
+For a flag variety \(X=G/P\), the root system is also \emph{\(P\)-graded} by \(\sum n_i\), but summing only over the noncompact simple roots.
 The unipotent radical \(G_+\subseteq P\) has Lie algebra the sum of the root vectors of the positively graded roots; clearly this sum is a unipotent Lie algebra, while the zero graded roots are invariant under reflection in one another, giving the semisimple factor of the Levi factor.
 A root is \emph{\(P\)-maximal} if it has highest grade in its irreducible factor.
 Its root vector then lies inside the center of the unipotent radical of \(P\).
@@ -788,7 +793,7 @@ We can always pick a basis of simple roots so that every simple root lies on the
 \]
 (We will instead always pick our hyperplane to allow for the chosen bases of simple roots shown above.)
 Grade the roots by height. 
-To see the heights, for each root on the chosen side of the hyperplane, draw a parallel hyperplane through that root:
+Our hyperplane is always chosen so that we can see the heights, i.e. roots of a given height lie on a parallel hyperplane:
 \[
 \begin{tikzpicture}[baseline=-.5]
 \begin{rootSystem}{G}
@@ -1011,13 +1016,14 @@ Similarly, the associated cominiscule of any adjoint variety is \(\dynkin[parabo
 So the associated cominiscule is complementary to the hyperplane, one dimensional, hence a projective line.
 \end{example}
 \section{The associated cominuscule is cominuscule}\label{subsection:associated.cominuscule}
-A \emph{parabolic subgroup} of a reductive Lie group \(G\) is a subgroup \(P\subseteq G\) so that \(X=G/P\) is a smooth complex projective variety; it follows that \(P\) is a connected complex subgroup  \cite{Borel:1991} p. 154 Theorem 11.16.
-\begin{lemma}
+Henceforth suppose that \(G\) is a connected complex semisimple Lie group.
+\begin{lemma}\label{lemma:breve.G.connected}
 The group \(\breve{G}\) is connected.
 \end{lemma}
 \begin{proof}
-Every parabolic subgroup of a connected reductive Lie group is connected.
+Every parabolic subgroup of a connected reductive Lie group is connected, so \(G\) and \(P\) are connected.
 By Langlands decomposition \cite{Knapp:2002} p. 482,  \(G,P,X,G_+,G_0\) are connected.
+The subgroup \(Z=Z_{G_+}\) is a Zariski closed subgroup of a unipotent linear algebraic group, so connected and isomorphic as an affine variety to complex Euclidean space \cite{Kambayashi/Miyanishi/Takeuchi:1974} p. 147 Remark A.3, \cite{Springer:2009} p. 243 corollary 14.2.7.
 Explicitly calculating out that each element
 \[
 g=e^{\sum t_{\alpha} e_{\alpha}}\in G_+
@@ -1026,43 +1032,51 @@ acts on an element \(e_{\beta}\in G_+\) by
 \[
 \Ad_g e_{\beta}
 \]
-expanding out into a sum with entirely positive coefficients unless \(g\) is a sum of \(P\)-maximal roots, so the center \(Z=Z_{G_+}\) of \(G_+\) consists precisely of the exponentials of elements of
+expanding out into a sum with entirely positive coefficients unless \(\log g\) is a sum of \(P\)-maximal roots, so the center \(Z=Z_{G_+}\) of \(G_+\) consists precisely of the exponentials of elements of
 \[
 \LieZ=\bigoplus\LieG_{\alpha},
 \]
-the sum being over the \(P\)-maximal roots, i.e. \(Z\) is connected.
-By definition of \(\breve{G}\), \(\breve{G}:=\left<Z,aZ\right>\) is connected, since \(Z\) is connected. \end{proof}
-\begin{lemma}
-Two associated cominiscule subvarieties are tangent at a point just when they are equal.
-\end{lemma}
-\begin{proof}
-Suppose that \(T_{x_0}\breve{X}=T_{x_0}g\breve{X}\).
-We can replace \(g\) by \(gh\) for any element \(h\in\breve{G}\), and \(\breve{G}\) acts transitively on \(\breve{X}\) by definition of \(\breve{X}\), so we can arrange that \(gx_0=x_0\), i.e. write \(g\) as \(p\) and we can assume that \(p\in P\).
-These tangent spaces are
-\[
-\breve\LieG/\breve\LieP=\Ad_p\left(\breve\LieG/\breve\LieP\right)\subseteq\LieG/\LieP.
-\]
-So
-\[
-\breve\LieG=\Ad_p\breve\LieG\subseteq\LieG.
-\]
-Hence taking exponentials, the identity components match:
-\[
-\breve{G}=\Ad_p\breve{G}.
-\]
-So their orbits are the same.
+the sum being over the box, i.e. over the \(P\)-maximal roots, so \(Z\) is connected.
+By definition of \(\breve{G}\), \(\breve{G}:=\left<Z,aZ\right>\) is connected, since \(Z\) is connected. 
 \end{proof}
+%\begin{lemma}
+%Two associated cominiscule subvarieties are tangent at a point just when they are equal.
+%\end{lemma}
+%\begin{proof}
+%Suppose that \(T_{x_0}\breve{X}=T_{x_0}g\breve{X}\).
+%We can replace \(g\) by \(gh\) for any element \(h\in\breve{G}\), and \(\breve{G}\) acts transitively on \(\breve{X}\) by definition of \(\breve{X}\), so we can arrange that \(gx_0=x_0\), i.e. write \(g\) as \(p\) and we can assume that \(p\in P\).
+%These tangent spaces are
+%\[
+%\breve\LieG/\breve\LieP=\Ad_p\left(\breve\LieG/\breve\LieP\right)\subseteq\LieG/\LieP.
+%\]
+%So
+%\[
+%\breve\LieG=\Ad_p\breve\LieG\subseteq\LieG.
+%\]
+%Hence taking exponentials, the identity components match:
+%\[
+%\breve{G}=\Ad_p\breve{G}.
+%\]
+%So their orbits are the same.
+%\end{proof}
 We prove lemma~\vref{lemma:associated.cominuscule}.
 \begin{proof}\label{page:associated.cominuscule}
 Take notation as above for a flag variety \(X=G/P\).
 It suffices to assume that \((X,G)\) is effective.
-It also suffices to assume that \((X,G)\) is an irreducible flag variety, as otherwise it is a product of irreducibles.
-The Lie algebra \(\LieZ\) of the center \(Z\) of the unipotent radical of \(P\) is the sum of the root spaces of the \(P\)-maximal roots (i.e. roots of maximal \(P\)-grade).
+It also suffices to assume that \((X,G)\) is an irreducible flag variety, as otherwise it is a product of irreducibles and the subgroup \(\breve{G}\) is the product of the associated subgroups, and so on.
+The Lie algebra \(\LieZ\) of the center \(Z\) of the unipotent radical of \(P\) is the sum of the root spaces of the box, i.e. of the \(P\)-maximal roots.
 Let \(a\) be the automorphism of \(G\) which changes the sign of the \(P\)-grading of the roots.
-So \(a\LieZ\) is the sum of the root spaces of the roots of minimal \(P\)-grade.
+So \(a\LieZ\) is the sum of the root spaces of the roots of minimal \(P\)-grade, the opposite box.
 Under bracket, these root spaces generate only root vectors and coroots, up to scaling, so the Lie algebra \(\breve\LieG\) of \(\breve{G}\) is the sum of some such, with a coroot only arising when we bracket the root vectors of the associated root and its negative. 
 So \(\breve\LieG\) contains all of the root vectors of the root system generated by the box, and their brackets, so contains the complex semisimple subalgebra with that root system.
 That subalgebra is generated in the same way, by the box root vectors, so \(\breve\LieG\) is that subalgebra, so is complex semisimple.
+By lemma~\vref{lemma:breve.G.connected},  \(\breve{G}\) is a complex semisimple Lie group.
+Since its root system lies inside that of \(G\), its Cartan subgroup is a subgroup of the Cartan subgroup of \(G\), generated by its coroots.
+Note that \(P\) contains the Cartan subgroup of \(G\), hence that of \(\breve{G}\), and contains \(Z\), so contains the parabolic subgroup of \(\breve{G}\) generated by the box.
+So this parabolic subgroup fixes the same point \(x_0\in X\) so lies in \(\breve{P}\).
+The \(\breve{G}\)-orbit \(\breve{X}\) of that point \(x_0\) is a flag variety \((\breve{X},\breve{G})\), with stabilizer \(\breve{P}=P\cap\breve{G}\) a parabolic subgroup, so connected.
+
+Since \(\breve\LieG\) is a complex subgroup of \(\LieG\), \(\breve{G}\) is a complex subgroup of \(G\), and so \(\breve{X}\subseteq X\) is a compact complex submanifold, and \(X\) is a smooth projective variety, so \(\breve{X}\subseteq X\) is a smooth subvariety.
 
 The vector spaces \(\LieZ\) and \(a\LieZ\) are irreducible \(\GZ\)-modules \cite{Knapp:2002} p. 332 proposition 5.105.
 Hence \(\breve\LieG\) is a \(\GZ\)-module.
@@ -1081,16 +1095,21 @@ The Lie algebra \(\breve\LieG\) consists of the sum of the root vectors of the \
 The subalgebra \(\breve\LieP\defeq\LieP\cap\breve\LieG\) consists precisely of the \(0\) and \(1\) grades.
 Note that \(\breve\LieP\) acts on \(\LieZ\) as \(\breveLieGZ\defeq\LieGZ \cap \breve\LieG\), i.e. as a sum of irreducible \(\breve\LieP\)-modules, so \(\breve{X}=\breve{G}/\breve{P}\) is cominuscule.
 
-Since \(\LieZ\) is an irreducible \(\GZ\)-module, if we start at the highest root, say \(\aa_0\), we can pass from it via root strings to get to any \(P\)-maximal root, repeatedly passing between \(P\)-maximal roots \(\aa,\bb\) by subtracting a \(\breve{P}\)-compact positive root \(\aa-\bb\), so that bracketing a root vector \(\XX{\aa-\bb}\) of root \(\aa-\bb\) takes \(\XX{\aa}\) to a nonzero multiple of \(\XX{\bb}\).
+Since \(\LieZ\) is an irreducible \(\GZ\)-module, if we start at the highest root, say \(\aa_0\), we can pass from it via root strings to get to any \(P\)-maximal root, i.e. anywhere in the box, repeatedly passing between \(P\)-maximal roots \(\aa,\bb\) by subtracting a \(\breve{P}\)-compact positive root \(\aa-\bb\), so that bracketing a root vector \(\XX{\aa-\bb}\) of root \(\aa-\bb\) takes \(\XX{\aa}\) to a nonzero multiple of \(\XX{\bb}\).
 Hence \(\LieZ\) is an irreducible \(\breveLieGZ\)-module, hence an irreducible \(\breve\LieP\)-module.
 As we have seen~\vpageref{subsec:reducible}, the number of irreducible modules of the parabolic subgroup is the number of irreducible factors of the flag variety, so \(\breve{X}\) is an irreducible flag variety.
 
 We next prove that \((\breve{X},\breve{G})\) is effective.
-Since \(\breve{P} \subset \breve{G}\) is a parabolic subgroup, we can apply our automorphism \(a\) to \(\breve{P}\), defined directly on roots of \(G\) and taking \(\breve{G}\)-roots to one another, to swap its \(\breve{P}\)-maximal and \(\breve{P}\)-minimal roots.
-Since all roots of \(\breve{G}\) are roots of \(G\), this automorphism applies to \(G\) leaving \(\breve{G}\) invariant, and swaps its \(P\)-maximal and \(P\)-minimal roots.
-So \(\GN \cap a \GN=1\) and \(a\GZ=\GZ\).
 An element \(g \in \breve{G}\) acts trivially on \(\breve{X}\) just when \(gg_1\breve{P}=g_1\breve{P}\) for all \(g_1 \in \breve{G}\), i.e. just when \(g\) lies in all \(\breve{G}\)-conjugates of \(\breve{P}\).
-But then \(g \in \breve{P} \cap a\breve{P} \subset P \cap aP=1\).
+
+The Weyl group acts transitively on bases of simple roots \cite{Serre:2001} p.33 theorem 2.
+So we can reverse basis by conjugation by some element of \(G\).
+Since \(\breve{P} \subset \breve{G}\) is a parabolic subgroup, conjugation on \(\breve{P}\) and \(P\) reverses the box and its opposite.
+But \(\breve{G}_+ \cap a \breve{G}_+=1\) and \(a\breve{G}_0=\breve{G}_+\).
+So an element \(g\in\breve{G}\) acting trivially on \(\breve{X}\) lies in \(\breve{G}_0\), the maximal reductive subgroup of \(\breve{P}\).
+Acting trivially on \(T_{x_0}\breve{X}\), \(g\) acts trivially on \(\LieZ\).
+Reversing, it acts trivially on \(\LieZ_-\), so acts trivially on \(\breve\LieG\), so lies in the center of \(\breve{G}\).
+The center lies in the Cartan subgroup, hence in the Cartan subgroup of \(G\).
 \end{proof}
 \subsection{Automorphisms of the associated cominiscule}
 \begin{example}
@@ -1145,19 +1164,31 @@ Hence this root vector is a vector field on \(X\), nowhere tangent to \(\breve{X
 \end{example}
 \subsection{Computing the automorphism Lie algebra}
 We return our thoughts to the general flag variety \((X,G)\).
-By definition of \((\breve{X},\breve{G})\), \(\breve{X}\subset X\) is an embedded compact complex submanifold.
-So the automorphism group \(G':=G_{\breve{X}}\) of \(\breve{X}\subset X\) is identified by biholomorphic isomorphism with the subgroup \(G'\subseteq G\) of elements \(g\in G\) that preserve the \(\breve{G}\)-orbit \(\breve{X}=\breve{G}x_0\) of a point \(x_0\in X\), a closed complex subgroup of \(G\).
-(As we have noted, we will find that, while \(G'\) contains \(\breve{G}\), it is often larger than \(\breve{G}\).)
+By definition of \((\breve{X},\breve{G})\), \(\breve{X}\subset X\) is a smooth subvariety.
+So the subgroup \(G'\subseteq G\) leaving \(\breve{X}\subseteq X\) invariant is a Zariski closed subgroup of \(G\), hence linear algebraic.
+(As we have noted, we will find that, while \(G'\) contains \(\breve{G}\), it is often larger than \(\breve{G}\) and is not always semisimple.)
 Let \(P':=G'\cap P\), so
 \[
 \breve{X}=\breve{G}/\breve{P}=G'/P'.
 \]
 Clearly \(\breve{X},\breve{P},\breve{G}\) are connected, so \(G'\) is connected just when \(P'\) is connected.
-\begin{theorem}
-The automorphism group \(G'\) of the associated cominiscule subvariety \(\breve{X}\subset X\) of a flag variety is a complex linear algebraic group with Lie algebra precisely the sum of the \(P\)-maximal and \(P\)-minimal root spaces, the maximal reductive \(\LieG_0\), and the roots spaces of all positive roots perpendicular to all \(P\)-maximal roots.
+\begin{theorem}\label{theorem:aut.Lie.alg}
+The automorphism group \(G'\) of the associated cominiscule subvariety \(\breve{X}\subset X\) of a flag variety is a complex linear algebraic group with Lie algebra precisely the sum of 
+\begin{itemize}
+\item
+the \(P\)-maximal and \(P\)-minimal root spaces, 
+\item
+the maximal reductive \(\LieG_0\), and 
+\item
+the roots spaces of all positive roots perpendicular to all \(P\)-maximal roots.
+\end{itemize}
 \end{theorem}
 \begin{proof}
-Clearly \(G'\subseteq G\) is a complex linear algebraic subgroup containing \(\breve{G}\).
+Clearly \(G'\subseteq G\) is a complex linear algebraic subgroup containing \(\breve{G}\), hence acts transitively on \(\breve{X}\).
+Let \(G'_0\subset G'\) be the connected component of the identity.
+Since \(\breve{X}\) is connected and \(G'_0\) is a connected linear algebraic group acting transitively on \(\breve{X}\), the stabilizer \(P'_0:=P'\cap G'_0\) of the point \(x_0\in X\) is a parabolic subgroup of \(G'_0\) \cite{Borel:1991} p. 148, hence is connected.
+Since \(\breve{X}=G'/P'\) is connected, \(P'\) intersects every component of \(G'\).
+
 Since \(\breve{G}\) acts transitively on \(\breve{X}\), every element of \(G'\) is a product of an element of \(\breve{G}\) and an element of \(P\).
 Clearly \(P'\) is the normalizer of \(\breve{G}P\) in \(P\).
 Thus \(P'\) contains all elements of \(P\) which normalize \(\breve{G}\).
@@ -1167,12 +1198,12 @@ Thus \(G_0\subseteq P'\).
 Hence \(P'\) contains the Cartan subgroup, so its Lie algebra is a sum of the Cartan subalgebra together with various root spaces.
 
 By definition \(P'\) preserves \(\breve\LieG+\LieP\).
-Since \(\breve{G},P\) are connected, so is \(\breve{G}P\), and so \(P'\) is precisely the subgroup of \(P\) preserving \(\breve\LieG+\LieP\).
-Take a \(P\)-submaximal \(P\)-positive root \(\aa\) at less than right angle with some \(P\)-maximal root \(\hat\bb\).
-Then the root vectors of \(\aa\) and \(\mn\bb:=-\hat\bb\) bracket out of \(\breve\LieG+\LieP\).
+Since \(\breve{G},P\) are connected, so is \(\breve{G}P\), and so \(P'\) is precisely the subgroup of \(P\) preserving \(\breve\LieG+\LieP\subseteq\LieG\).
+Take a \(P\)-submaximal \(P\)-positive root \(\aa\) at less than right angle with some \(P\)-maximal root \(\mx\bb\).
+Then the root vectors of \(\aa\) and \(\mn\bb:=-\mx\bb\) bracket out of \(\breve\LieG+\LieP\).
 Hence the Lie algebra \(\LieG'\) of \(G'\) contains no such.
 
-The \(P\)-submaximal \(P\)-positive roots \(\aa\) at a right angle to all \(P\)-maximal roots \(\hat\bb\) have roots vectors commuting, so the root vectors of \(\aa\) preserve \(\breve\LieG\oplus\LieP\).
+The \(P\)-submaximal \(P\)-positive roots \(\aa\) at a right angle to all \(P\)-maximal roots \(\mx\bb\) have roots vectors commuting, so the root vectors of \(\aa\) preserve \(\breve\LieG\oplus\LieP\).
 Roots which are \(P\)-positive are also positive, and conversely if they are not \(P\)-compact.
 So \(\LieP'\) contains the root vectors of precisely the \(P\)-maximal roots and the \(P\)-positive roots perpendicular to them, and so consists precisely of these root vectors and the Cartan subalgebra.
 
@@ -1184,6 +1215,30 @@ If tangent to \(\breve{X}\) at some point of \(\breve{X}\), and commuting with t
 Hence this root vector is a vector field on \(X\), nowhere tangent to \(\breve{X}\).
 \end{proof}
 
+\begin{lemma}
+For any flag variety \((X,G)\), the group \(G'\) of automorphisms of the associated cominiscule subvariety \(\breve{X}\subseteq X\) is connected.
+The subgroup \(P'\subseteq G'\) fixing a point of \(\breve{X}\) is a connected parabolic subgroup.
+\end{lemma}
+\begin{proof}
+Since \(\breve{G}\subseteq G'\), \(G'\) acts transitively on the connected variety \(\breve{X}\).
+We saw in the proof of theorem~\vref{theorem:aut.Lie.alg} that the stabilizer \(P'\subset G'\) of any point \(x_0\in\breve{X}\) intersects every component of \(G'\).
+It suffices to prove that \(P'\) is connected.
+The subgroup \(G_+':=G_+\cap P'\subset G'\) is unipotent, so connected and isomorphic as an affine variety to complex Euclidean space \cite{Kambayashi/Miyanishi/Takeuchi:1974} p. 147 Remark A.3, \cite{Springer:2009} p. 243 corollary 14.2.7.
+But \(G_0\subseteq P'\), so \(P'=G_0\ltimes G_+'\), so is connected.
+In the proof of theorem~\vref{theorem:aut.Lie.alg}, we saw that \(P'\) is therefore a parabolic subgroup.
+\end{proof}
+
+\begin{theorem}
+For any flag variety \((X,G)\), the group \(G'\) of automorphisms of the associated cominiscule subvariety \(\breve{X}\subseteq X\) acts on \(\breve{X}\) as precisely the biholomorphisms of \(\breve{X}\) arising from elements of \(\breve{G}\).
+\end{theorem}
+\begin{proof}
+We can assume that \(G\) acts almost effectively on \(X\).
+The automorphism group \(G'\) contains \(\breve{G}\), so its image in the biholomorphisms of \(\breve{X}\) contains the image of \(\breve{G}\), which is a quotient \(\breve{G}/\Gamma\) by a finite subgroup \(\Gamma\subset \breve{G}_0\) of the Levi factor \(\breve{G}_0\subseteq\breve{P}\), central in \(G\).
+The Lie algebra \(\LieG'\) maps to the vector fields on \(\breve{X}\), with kernel containing all root spaces of roots perpendicular to the box.
+If \((X,G)\) is almost effective, then \(\LieG_0\) acts on \(\breve{\LieG}/\breve{\LieP}=T_{x_0} \breve{X}\) as a sum of irreducibles, each simple factor acting in an irreducible representation, so \(G_0\) acts almost effectively.
+Hence \(\LieG'\) mapsto \(\breve\LieG\), an isomorphism on \(\breve\LieG\subseteq\LieG'\).
+Since \(G'\) is connected, this map has connected image.
+\end{proof}
 
 \section{Hasse diagrams}
 \subsection{The Hasse diagram of a root system}
@@ -1222,15 +1277,21 @@ We pass to the associated graded \(P\)-module.
 It is isomorphic to \(\LieG/\LieP\) as a \(G_0\)-module, since \(G_0\) acts on every \(P\)-module as a direct sum of \(G_0\)-irreducibles, so the filtration becomes trivial.
 Since \(G_+\) acts by nilpotent transformations, it acts trivially on the associated graded.
 So the associated graded of \(\LieG/\LieP\) is precisely the decomposition of \(\LieG/\LieP\) into the direct sum of \(G_0\)-modules.
-So the tangent bundle \(TX\) has associated graded vector bundle arising from this decomposition of \(\LieG/\LieP\) into its direct sum of \(G_0\)-modules
+So the tangent bundle \(TX\) has associated graded vector bundle arising from this decomposition of \(\LieG/\LieP\) into its direct sum of \(G_0\)-modules.
 But \(\LieG/\LieP\) is the sum of the negative root spaces.
-We brake this sum into a sum of \(G_0\)-modules, i.e. broken up by weights of the \(P\)-compact roots.
+We break this sum into a sum of \(G_0\)-modules, i.e. broken up by weights of the \(P\)-compact roots.
 So in our drawings, the \(P\)-negative roots are connected by lines just when they differ by a \(P\)-compact root, so lie in a \(P\)-compact root string, hence in the same irreducible \(G_0\)-module.
 Hence our pictures are precisely the \(G\)-invariant decompositions of the associated graded of \(TX\).
 \begin{example} 
 Compare \dynkin F4 to \dynkin F{***x}:
 \hasseDiagrams{F4;[three D=false,attach Dynkin diagram=true]F{***x}}
-We can see the box: the \(7\) roots attached to the highest root.
+We can see the box: the \(7\) roots attached to the highest root:
+\[
+\begin{tikzpicture}
+\hasse[three D=false,attach Dynkin diagram=true]F{***x}
+\fill[opacity=.25,gray,rounded corners] (2.05,5.1) -- (2.05,3.5) -- (3.15,2) -- (2.9,1.84) -- (1.75,3.5) -- (1.75,5.1) -- cycle;
+\end{tikzpicture}
+\]
 \end{example}
 \subsection{The Hasse diagram of a cominuscule variety}
 In table~\vref{table:boxes}, we draw the  Hasse diagrams of the cominuscule varieties.
@@ -1984,29 +2045,31 @@ Another proof is immediate from the Hasse diagram:
 \end{proof}
 
 \section{Appendix: freedom}
-In this section, we prove that the associated cominiscule variety in any irreducible flag variety is preserved by a subgroup of the automorphisms of the flag variety which is as large as possible such to an open condition on first derivatives.
+In this section, we prove that the associated cominiscule variety in any irreducible flag variety is preserved by a subgroup of the automorphisms of the flag variety which is as large as possible such to an open condition on tangent spaces.
 \subsection{Defining freedom}
 Suppose that \(X=G/P\) is an irreducible flag variety.
 A linear subspace \(V\subseteq T_x X\) in a tangent space is \emph{free} if \(V\) is maximal subject to not containing any line lying in a \(G\)-invariant coherent proper subsheaf of \(TX\).
+(Note that every \(G\)-invariant coherent subsheaf of \(TX\) is a homogeneous holomorphic vector bundle, hence a holomorphic distribution.)
 If \(X\) is cominiscule, there is no such invariant subsheaf; by maximality, \(V=T_x X\).
-If \(X\) is not cominiscule, \(V\) is complementary to the (unique!) largest invariant subbundle.
-Since, as we will see, the associated cominiscule subvariety's tangent spaces are free, every free linear subspace \(V\) has dimension equal to that of the associated cominiscule subvariety.
+If \(X\) is not cominiscule, \(V\) is complementary to the (unique!) largest invariant proper subbundle.
+The associated cominiscule subvariety's tangent spaces are free.
+Hence every free linear subspace \(V\) has dimension equal to that of the associated cominiscule subvariety.
 \subsection{Free morphisms}
 Take a morphism \(Z\xrightarrow{\varphi}X\) from a reduced complex space \(Z\) to an irreducible flag variety \(X\).
 A point \(z_0\in Z\) is \emph{free} if \(z_0\) is a smooth point of \(Z\) at which \(\varphi'(z_0)\) is injective with free image.
-Intuitively, think of each invariant subsheaf on \(X\) as an invariant differential equation of first order.
+Intuitively, think of each \(G\)-invariant distribution on \(X\) as an invariant differential equation of first order.
 Near a free point of \(Z\), any curve smooth and tangent to \(Z\) at that point doesn't satisfy any such equation.
-We say \(Z\) is a \emph{free complex space} if it is connected and its open set of free points \(\free{Z}\subseteq Z\) is dense.
-Note that \(Z\) is free just when its smooth points form a free immersed complex submanifold.
+We say \(Z\) is a \emph{free complex space} if every point is free, \emph{generically free} if its open set of free points \(\free{Z}\subseteq Z\) is dense in every component.
+Note that \(\free{Z}\) is a free immersed complex submanifold.
 \subsection{Automorphisms}\label{subsection:Freedom}
 An \emph{automorphism} of a morphism \(Z\xrightarrow{\varphi}X\) from a complex space \(Z\) to a flag variety \((X,G)\) is a pair \((f,g)\) of automorphism \(Z\xrightarrow{f}Z\) of complex spaces and \(g\in G\) so that \(\varphi(f(z))=g\varphi(z)\) for all \(z\in Z\).
 The \emph{automorphism group} \(G_Z\) of \(Z\xrightarrow{\varphi}X\) is the group of automorphisms with the topology of uniform convergence on compact sets.
 If \(Z\) has finitely many components, so does its smooth locus.
 The automorphisms of the smooth part of \(Z\) then form a Lie group acting smoothly and properly on a sufficiently high jet bundle of maps \(Z\to X\) \cite{mckay2023introduction}.
-The automorphisms of any finite component free complex space form a closed subgroup of that Lie group, hence also a Lie group acting smoothly on each smooth stratum.
-The associated cominiscule is a natural object to study because:
+The automorphisms of any finite component generically free complex space form a closed subgroup of that Lie group, hence also a Lie group acting smoothly on each smooth stratum.
+The associated cominiscule subvariety is a natural object to study because:
 \begin{theorem}\label{theorem:freedom}
-The automorphism group of any finite component free complex space \(Z\xrightarrow{\varphi}X\) in any irreducible flag variety \(X\) has dimension 
+The automorphism group of any finite component generically free complex space \(Z\xrightarrow{\varphi}X\) in any irreducible flag variety \(X\) has dimension 
 \[
 \dim G_Z\le \dim G_{\breve{X}}
 \]
@@ -2023,7 +2086,7 @@ The stabilizer in \(G_Z\) of some free point \(z_0\in Z\) contains the Cartan su
 \end{itemize}
 \end{theorem}
 \begin{theorem}\label{theorem:lots.of.auts}
-If a compact complex manifold \(Z\) with holomorphic map \(Z\to X\) to a flag variety \((X,G)\) is everywhere free then it is homogeneous under automorphisms, and is a product of an abelian variety and a flag variety.
+If a compact complex manifold \(Z\) with holomorphic map \(Z\to X\) to a flag variety \((X,G)\) is free then it is homogeneous under automorphisms, and is a product of an abelian variety and a flag variety.
 \end{theorem}
 Before we can prove theorem~\ref{theorem:freedom} and theorem~\vref{theorem:lots.of.auts}, we need some additional notation.
 \subsection{Root systems}
@@ -2044,7 +2107,7 @@ Note that the \(P\)-positive roots are \emph{not} necessarily the positive roots
 \subsection{Chevalley bases}\label{subsubsection:ChevalleyBases}
 Pick a complex semisimple Lie group \(G\) and a Cartan subgroup \(H \subset G\).
 Denote the Killing form on \(\LieH^*\) by \(\alpha, \beta \mapsto \KillingForm{\alpha}{\beta}\).
-A \emph{Chevalley basis} \(\XX{\alpha} \in \rtsp{\LieG}{\alpha}, \HH{\alpha} \in \LieH\) is a spanning set of \(\LieG\), parameterized by roots \(\alpha \in \LieH^*\), so that
+A \emph{Chevalley basis} \(\XX{\alpha} \in \rtsp{\LieG}{\alpha}, \HH{\alpha} \in \LieH\) is a spanning set of \(\LieG\), parameterized by roots \(\alpha\in\Delta\), so that
 \begin{enumerate}
 \item \([\HH{\beta}\XX{\alpha}]=2 \frac{\KillingForm{\alpha}{\beta}}{\KillingSquare{\beta}} \XX{\alpha}\)
 \item \([\HH{\alpha}\HH{\beta}]=0\),
@@ -2108,7 +2171,8 @@ with sums over all roots.
 \subsection{Proving the freedom theorems}
 We now prove theorem~\vref{theorem:freedom}:
 \begin{proof}
-The elements of \(G\) preserving a free complex space also preserve its smooth locus, and the open subset of the smooth locus where the map is an immersion with free tangent spaces, so we can assume we face a free immersed complex submanifold.
+The elements of \(G\) preserving a generically free complex space also preserve its smooth locus, and the open subset of the smooth locus where the map is an immersion with free tangent spaces.
+Conversely, automorphisms of the free locus preserve its closure, so we can assume we face a free immersed complex submanifold.
 We carry out the moving frame method on an arbitrary free immersed submanifold \cite{Griffiths:1974,Jensen:1977}.
 Note that freedom is precisely that every tangent space is complementary to the largest nonzero proper \(G\)-invariant subbundle inside \(TX\).
 We will see that various differential invariants vanish precisely for the associated cominiscule.
@@ -2415,7 +2479,7 @@ It is not clear whether \(\free{Z}\) bears a holomorphic Cartan geometry modelle
 Nonetheless, the methods of \cite{McKay:2011} can be used to prove the following. 
 Take any polynomial equation
 \[
-P(c_1,c_2,\dots,c_n)=0
+0=P(c_1,c_2,\dots,c_n)
 \]
 satisfied by the Chern classes of the tangent bundle of \(\breve{X}\).
 Then the same equation is satisfied in Dolbeault cohomology on \(\free{Z}\).
@@ -2427,7 +2491,7 @@ We prove theorem~\vref{theorem:lots.of.auts}:
 Suppose that \(V\subset TX\) is the maximal \(G\)-invariant holomorphic distribution not equal to \(TX\), as above.
 The vector bundle inclusion morphism\(TZ\to\left.TX\right|_Z\) composes with the projection \(TX\to TX/V\) to give a holomorphic vector bundle isomorphism \(\left.TX/V\right|_Z=TZ\), because \(TZ\) is complementary to \(\left.V\right|_Z\).
 Since \(X\) is homogeneous, \(TX\) is spanned by global sections, so \(TX/V\) is too, and so \(TZ\) is too, so \(Z\) is homogeneous.
-Since \(Z\to X\) is everywhere free, it is an immersion, and since \(Z\) is compact, it is a finite covering map to its image, hence \(Z\) is a finite covering space of a homogeneous projective variety, so \(Z\) is a homogeneous projective variety.
+Since \(Z\to X\) is free, it is an immersion, and since \(Z\) is compact, it is a finite covering map to its image, hence \(Z\) is a finite covering space of a homogeneous projective variety, so \(Z\) is a homogeneous projective variety.
 Every homogeneous projective variety is such a product \cite{Borel/Remmert:1961,Sancho:2003}.
 \end{proof}
 \section{Conclusion}
