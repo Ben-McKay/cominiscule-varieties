@@ -1,0 +1,278 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{Akhiezer:1995}
+Dmitri~N. Akhiezer, \emph{Lie group actions in complex analysis}, Aspects of
+  Mathematics, E27, Friedr. Vieweg \& Sohn, Braunschweig, 1995. \MR{1334091}
+
+\bibitem{bakshi2023morphisms}
+Sarjick Bakshi and A~J Parameswaran, \emph{Morphisms from projective spaces to
+  {$G/P$}}, \url{https://arxiv.org/abs/2308.00286}, 2023.
+
+\bibitem{Baston/Eastwood:1989}
+Robert~J. Baston and Michael~G. Eastwood, \emph{The {P}enrose transform},
+  Oxford Mathematical Monographs, The Clarendon Press Oxford University Press,
+  New York, 1989, Its interaction with representation theory, Oxford Science
+  Publications. \MR{MR1038279 (92j:32112)}
+
+\bibitem{Billey/Lakshmibai:2000}
+Sara Billey and V.~Lakshmibai, \emph{Singular loci of {S}chubert varieties},
+  Progress in Mathematics, vol. 182, Birkh\"auser Boston, Inc., Boston, MA,
+  2000. \MR{1782635}
+
+\bibitem{Borel/Remmert:1961}
+A.~Borel and R.~Remmert, \emph{\"{U}ber kompakte homogene {K}\"ahlersche
+  {M}annigfaltigkeiten}, Math. Ann. \textbf{145} (1961/1962), 429--439.
+  \MR{MR0145557 (26 \#3088)}
+
+\bibitem{Borel:1954}
+Armand Borel, \emph{K\"ahlerian coset spaces of semisimple {L}ie groups}, Proc.
+  Nat. Acad. Sci. U.S.A. \textbf{40} (1954), 1147--1151. \MR{77878}
+
+\bibitem{Borel:1991}
+\bysame, \emph{Linear algebraic groups}, second ed., Graduate Texts in
+  Mathematics, vol. 126, Springer-Verlag, New York, 1991. \MR{92d:20001}
+
+\bibitem{Bourbaki:2002}
+Nicolas Bourbaki, \emph{Lie groups and {L}ie algebras. {C}hapters 4--6},
+  Elements of Mathematics (Berlin), Springer-Verlag, Berlin, 2002, Translated
+  from the 1968 French original by Andrew Pressley. \MR{1890629}
+
+\bibitem{Bourbaki:2003}
+\bysame, \emph{Algebra {II}. {C}hapters 4--7}, french ed., Elements of
+  Mathematics (Berlin), Springer-Verlag, Berlin, 2003. \MR{1994218}
+
+\bibitem{Bryant:2000}
+Robert Bryant, \emph{{\'E}lie {C}artan and geometric duality}, Journ\'ees
+  {\'E}lie Cartan 1998 et 1999, vol.~16, Institut {\'E}lie Cartan, 2000,
+  pp.~5--20.
+
+\bibitem{Bryant:1982}
+Robert~L. Bryant, \emph{Submanifolds and special structures on the octonians},
+  J. Differential Geometry \textbf{17} (1982), no.~2, 185--232. \MR{664494}
+
+\bibitem{BCGGG:1991}
+Robert~L. Bryant, Shiing-Shen Chern, R.~B. Gardner, H.~L. Goldschmidt, and
+  P.~A. Griffiths, \emph{Exterior differential systems}, Springer-Verlag, New
+  York, 1991. \MR{92h:58007}
+
+\bibitem{Buch.Chaput.Mihalcea.Perrin:2018}
+Anders~S. Buch, Pierre-Emmanuel Chaput, Leonardo~C. Mihalcea, and Nicolas
+  Perrin, \emph{A {C}hevalley formula for the equivariant quantum {$K$}-theory
+  of cominuscule varieties}, Algebr. Geom. \textbf{5} (2018), no.~5, 568--595.
+  \MR{3847206}
+
+\bibitem{Cap/Slovak:2009}
+Andreas {\v{C}}ap and Jan Slov{\'a}k, \emph{Parabolic geometries. {I}},
+  Mathematical Surveys and Monographs, vol. 154, American Mathematical Society,
+  Providence, RI, 2009, Background and general theory. \MR{2532439
+  (2010j:53037)}
+
+\bibitem{Carter:2005}
+R.~W. Carter, \emph{Lie algebras of finite and affine type}, Cambridge Studies
+  in Advanced Mathematics, vol.~96, Cambridge University Press, Cambridge,
+  2005. \MR{2188930}
+
+\bibitem{Conrad:2017}
+Brian Conrad, \emph{Notes from {B}rian {C}onrad’s course on linear algebraic
+  groups at {S}tanford, winter 2010}, 2017, typed by Sam Lichtenstein,
+  pp.~1--66.
+
+\bibitem{Demailly:2002}
+Jean-Pierre Demailly, \emph{On the {F}robenius integrability of certain
+  holomorphic {$p$}-forms}, Complex geometry ({G}\"ottingen, 2000), Springer,
+  Berlin, 2002, pp.~93--98. \MR{1922099 (2003f:32029)}
+
+\bibitem{Demazure/Gabriel:1970}
+Michel Demazure and Pierre Gabriel, \emph{Groupes alg\'{e}briques. {T}ome {I}:
+  {G}\'{e}om\'{e}trie alg\'{e}brique, g\'{e}n\'{e}ralit\'{e}s, groupes
+  commutatifs}, Masson \& Cie, \'{E}diteurs, Paris; North-Holland Publishing
+  Co., Amsterdam, 1970, Avec un appendice {\it Corps de classes local} par
+  Michiel Hazewinkel. \MR{302656}
+
+\bibitem{Fulton/Harris:1991}
+William Fulton and Joe Harris, \emph{Representation theory}, Graduate Texts in
+  Mathematics, vol. 129, Springer-Verlag, New York, 1991, A first course,
+  Readings in Mathematics. \MR{93a:20069}
+
+\bibitem{Griffiths:1974}
+P.~Griffiths, \emph{On {C}artan's method of {L}ie groups and moving frames as
+  applied to uniqueness and existence questions in differential geometry}, Duke
+  Math. J. \textbf{41} (1974), 775--814. \MR{410607}
+
+\bibitem{Hilgert.Neeb:2012}
+Joachim Hilgert and Karl-Hermann Neeb, \emph{Structure and geometry of {L}ie
+  groups}, Springer Monographs in Mathematics, Springer, New York, 2012.
+  \MR{3025417}
+
+\bibitem{Knutson:2022}
+Allen~Knutson (https://mathoverflow.net/users/391/allen knutson), \emph{Which
+  linear combinations of simple roots are roots}, MathOverflow,
+  URL:https://mathoverflow.net/q/172033 (version: 2022-06-21).
+
+\bibitem{Humphreys:1975}
+James~E. Humphreys, \emph{Linear algebraic groups}, Springer-Verlag, New
+  York-Heidelberg, 1975, Graduate Texts in Mathematics, No. 21. \MR{0396773 (53
+  \#633)}
+
+\bibitem{Humphreys:1978}
+\bysame, \emph{Introduction to {L}ie algebras and representation theory},
+  Graduate Texts in Mathematics, vol.~9, Springer-Verlag, New York-Berlin,
+  1978, Second printing, revised. \MR{499562}
+
+\bibitem{Ivey.Landsberg:2016}
+Thomas~A. Ivey and Joseph~M. Landsberg, \emph{Cartan for beginners}, second
+  ed., Graduate Studies in Mathematics, vol. 175, American Mathematical
+  Society, Providence, RI, 2016, Differential geometry via moving frames and
+  exterior differential systems. \MR{3586335}
+
+\bibitem{Jensen:1977}
+Gary~R. Jensen, \emph{Higher order contact of submanifolds of homogeneous
+  spaces}, Lecture Notes in Mathematics, vol. Vol. 610, Springer-Verlag,
+  Berlin-New York, 1977. \MR{500648}
+
+\bibitem{Knapp:2002}
+Anthony~W. Knapp, \emph{Lie groups beyond an introduction}, second ed.,
+  Progress in Mathematics, vol. 140, Birkh\"auser Boston Inc., Boston, MA,
+  2002. \MR{MR1920389 (2003c:22001)}
+
+\bibitem{Kobayashi/Nagano:1964}
+Shoshichi Kobayashi and Tadashi Nagano, \emph{A theorem on filtered {L}ie
+  algebras and its applications}, Bull. Amer. Math. Soc. \textbf{70} (1964),
+  401--403. \MR{0162892}
+
+\bibitem{Kostant:1961}
+Bertram Kostant, \emph{Lie algebra cohomology and the generalized
+  {B}orel-{W}eil theorem}, Ann. of Math. (2) \textbf{74} (1961), 329--387.
+  \MR{0142696}
+
+\bibitem{kumar2023nonexistence}
+Shrawan Kumar, \emph{Nonexistence of regular maps between homogeneous
+  projective varieties}, \url{https://arxiv.org/abs/2307.07018}, 2023.
+
+\bibitem{Lam.Williams:2008}
+Thomas~F. Lam and Lauren Williams, \emph{Total positivity for cominuscule
+  {G}rassmannians}, New York J. Math. \textbf{14} (2008), 53--99. \MR{2383586}
+
+\bibitem{Landsberg/Manivel:2003}
+Joseph~M. Landsberg and Laurent Manivel, \emph{On the projective geometry of
+  rational homogeneous varieties}, Comment. Math. Helv. \textbf{78} (2003),
+  no.~1, 65--100. \MR{1966752}
+
+\bibitem{Lang:2002}
+Serge Lang, \emph{Algebra}, third ed., Graduate Texts in Mathematics, vol. 211,
+  Springer-Verlag, New York, 2002. \MR{1878556}
+
+\bibitem{Matsumura:1989}
+Hideyuki Matsumura, \emph{Commutative ring theory}, second ed., Cambridge
+  Studies in Advanced Mathematics, vol.~8, Cambridge University Press,
+  Cambridge, 1989, Translated from the Japanese by M. Reid. \MR{1011461}
+
+\bibitem{McKay:2011}
+Benjamin McKay, \emph{Characteristic forms of complex {C}artan geometries},
+  Adv. Geom. \textbf{11} (2011), no.~1, 139--168. \MR{2770434}
+
+\bibitem{mckay2023introduction}
+Benjamin McKay, \emph{An introduction to {C}artan geometries},
+  \url{https://arxiv.org/abs/2302.14457}, 2023.
+
+\bibitem{Mumford/Fogarty/Kirwan:1994}
+David Mumford, John Fogarty, and Frances Kirwan, \emph{Geometric invariant
+  theory}, third ed., Ergebnisse der Mathematik und ihrer Grenzgebiete (2)
+  [Results in Mathematics and Related Areas (2)], vol.~34, Springer-Verlag,
+  Berlin, 1994. \MR{MR1304906 (95m:14012)}
+
+\bibitem{Murphy:1992}
+Gerard~J. Murphy, \emph{Partially ordered groups}, Irish Math. Soc. Bull.
+  (1992), no.~28, 11--19. \MR{1205442}
+
+\bibitem{naldi2022morphisms}
+Angelo Naldi and Gianluca Occhetta, \emph{Morphisms between {G}rassmannians},
+  \url{https://arxiv.org/abs/2202.11411}, 2022.
+
+\bibitem{occhetta2023morphisms}
+Gianluca Occhetta and Eugenia Tondelli, \emph{Morphisms between {G}rassmannians
+  {II}}, \url{https://arxiv.org/abs/2308.15221}, 2023.
+
+\bibitem{OnishchikVinberg:1990}
+A.~L. Onishchik and {\`E}.~B. Vinberg, \emph{Lie groups and algebraic groups},
+  Springer Series in Soviet Mathematics, Springer-Verlag, Berlin, 1990,
+  Translated from the Russian and with a preface by D. A. Leites.
+  \MR{91g:22001}
+
+\bibitem{Plotkin/Semenov/Vavilov:1998}
+Eugene Plotkin, Andrei Semenov, and Nikolai Vavilov, \emph{Visual basic
+  representations: an atlas}, Internat. J. Algebra Comput. \textbf{8} (1998),
+  no.~1, 61--95. \MR{1492062}
+
+\bibitem{Ringel2013}
+Claus~Michael Ringel, \emph{The root posets and their rich antichains}, arXiv
+  e-prints (2013), arXiv:1306.1593.
+
+\bibitem{Rosenfeld:1997}
+Boris Rosenfeld, \emph{Geometry of {L}ie groups}, Mathematics and its
+  Applications, vol. 393, Kluwer Academic Publishers Group, Dordrecht, 1997.
+  \MR{1443207}
+
+\bibitem{Sancho:2003}
+Carlos Sancho~De Salas, \emph{Complete homogeneous varieties: Structure and
+  classification}, Transactions of the American Mathematical Society
+  \textbf{355} (2003), no.~9, 3651--3667.
+
+\bibitem{Serre:2001}
+Jean-Pierre Serre, \emph{Complex semisimple {L}ie algebras}, Springer
+  Monographs in Mathematics, Springer-Verlag, Berlin, 2001, Translated from the
+  French by G. A. Jones, Reprint of the 1987 edition. \MR{2001h:17001}
+
+\bibitem{Sharpe:2002}
+Richard~W. Sharpe, \emph{An introduction to {C}artan geometries}, Proceedings
+  of the 21st Winter School ``Geometry and Physics'' (Srn\'\i, 2001), no.~69,
+  2002, pp.~61--75. \MR{2004f:53023}
+
+\bibitem{Sierra:2021}
+Jos\'{e}~Carlos Sierra, \emph{On morphisms from {$\mathbb{P}^3$} to
+  {$\mathbb{G}(1, 3)$}}, C. R. Math. Acad. Sci. Paris \textbf{359} (2021),
+  853--860. \MR{4322984}
+
+\bibitem{Tango:1974}
+Hiroshi Tango, \emph{On {$(n-1)$}-dimensional projective spaces contained in
+  the {G}rassmann variety {${\rm Gr}(n,\,1)$}}, J. Math. Kyoto Univ.
+  \textbf{14} (1974), 415--460. \MR{371915}
+
+\bibitem{Tango:1976}
+\bysame, \emph{On morphisms from projective space {$P\sp{n}$} to the
+  {G}rassmann variety {$G{\rm r}(n, d)$}}, J. Math. Kyoto Univ. \textbf{16}
+  (1976), no.~1, 201--207. \MR{401787}
+
+\bibitem{Tirao/Wolf:1970}
+Juan~A. Tirao and Joseph~A. Wolf, \emph{Homogeneous holomorphic vector
+  bundles}, Indiana Univ. Math. J. \textbf{20} (1970/71), 15--31. \MR{263110}
+
+\bibitem{Tits:1962}
+J.~Tits, \emph{Espaces homog\`enes complexes compacts}, Comment. Math. Helv.
+  \textbf{37} (1962/63), 111--120. \MR{154299}
+
+\bibitem{Tits:1966}
+\bysame, \emph{Normalisateurs de tores. {I}. {G}roupes de {C}oxeter
+  \'{e}tendus}, J. Algebra \textbf{4} (1966), 96--116. \MR{206117}
+
+\bibitem{Vinberg:1994}
+\`E.~B. Vinberg (ed.), \emph{Lie groups and {L}ie algebras, {III}},
+  Encyclopaedia of Mathematical Sciences, vol.~41, Springer-Verlag, Berlin,
+  1994, Structure of Lie groups and Lie algebras, A translation of
+  {\emph{Current problems in mathematics. Fundamental directions. Vol. 41}}
+  (Russian), Akad. Nauk SSSR, Vsesoyuz. Inst. Nauchn. i Tekhn. Inform., Moscow,
+  1990 [ MR1056485 (91b:22001)], Translation by V. Minachin [V. V. Minakhin],
+  Translation edited by A. L. Onishchik and \`E. B. Vinberg. \MR{1349140}
+
+\bibitem{Wolf:2011}
+Joseph~A. Wolf, \emph{Spaces of constant curvature}, sixth ed., AMS Chelsea
+  Publishing, Providence, RI, 2011. \MR{2742530}
+
+\end{thebibliography}
