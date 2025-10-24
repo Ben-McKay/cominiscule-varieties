@@ -40,7 +40,7 @@
 \lie@hasse@show@levitrue
 \newif\iflie@hasse@show@unipotent@radical
 \lie@hasse@show@unipotent@radicaltrue
-\pgfkeys{ 
+\pgfkeys{
 	/Lie Hasse diagram/.is family,
 	/Lie Hasse diagram,
 	attach Dynkin diagram/.is if 
@@ -55,8 +55,14 @@
 	edge quotes/.style={
 		/Dynkin diagram/text style,
 		auto,
-		inner sep=2pt
+%		inner sep=2pt
 	},
+	edge left text/.style={
+		left},
+	edge right text/.style={
+		right},
+	edge right near start text/.style={
+		right,near start},
 	compact edge/.style={},
 	noncompact edge/.style={opacity=0},
 	compact root/.code={\dynkinDrawSolidRootMark{#1}},
@@ -222,7 +228,7 @@
 					\ClassError%
 						{Lie Hasse}%
 						{Rank of E series Hasse diagram: \the\dynkin@rank{}%
-						less than 6; not define yet}%
+						less than 6; not defined yet}%
 						{}%
 				\fi%
 			\fi%
@@ -554,6 +560,7 @@
 \NewDocumentCommand\draw@lie@hasse@edge{O{}mmmm}%
 %[edge label options]{from grade}{from index}{to index}{simple root}
 {%
+	\xdef\leftOrRight{/Lie Hasse diagram/edge #1 text}%
 	\root@gpo #2\relax%
 	\advance\root@gpo by 1\relax%
 	\if@compact@root{#2;#3}%
@@ -603,7 +610,7 @@
 				/Lie Hasse diagram/edge,%
 				/Lie Hasse diagram/compact edge]%
 				(#2;#3)--%
-					node[lie@hasse@color,/Lie Hasse diagram/edge quotes,#1]%
+					node[lie@hasse@color,/Lie Hasse diagram/edge quotes,\leftOrRight]%
 					{\(\pgfkeys{/Dynkin diagram/label macro={\edgeQuote{\label@text}}}\)}%
 				(\the\root@gpo;#4);%
 		\fi%
@@ -619,7 +626,7 @@
 				/Lie Hasse diagram/noncompact edge%
 			]%
 			(#2;#3)--%
-				node[lie@hasse@color,/Lie Hasse diagram/edge quotes,#1]%
+				node[lie@hasse@color,/Lie Hasse diagram/edge quotes,\leftOrRight]%
 				{\(\pgfkeys{/Dynkin diagram/label macro={\edgeQuote{\label@text}}}\)}%
 			(\the\root@gpo;#4);%
 		\fi%
@@ -709,6 +716,8 @@
 	\ifnum\lie@hasse@i<\the\maxA@i%
 	\repeat%
 }%
+
+
 %% \hasse@A@width@at@grade{g}{\w} sets the counter \w to
 %% the value of the width (number of roots) at grade g of
 %% the A root system with rank \the\dynkin@rank
@@ -1165,7 +1174,7 @@
 		\advance\hasse@D@target by 1\relax%
 		\begin{pgfonlayer}{Dynkin behind}
 			\draw@lie@hasse@edge%
-				[right,near start]%
+				[right near start]%
 				{#1}{#2}%
 				{\the\hasse@D@target}{\the\dynkin@rank}%
 		\end{pgfonlayer}%

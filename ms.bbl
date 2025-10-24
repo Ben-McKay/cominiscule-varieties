@@ -39,6 +39,14 @@ Armand Borel, \emph{K\"ahlerian coset spaces of semisimple {L}ie groups}, Proc.
 \bysame, \emph{Linear algebraic groups}, second ed., Graduate Texts in
   Mathematics, vol. 126, Springer-Verlag, New York, 1991. \MR{92d:20001}
 
+\bibitem{Bourbaki:1975}
+N.~Bourbaki, \emph{\'el\'ements de math\'ematique. {F}asc. {XXXVIII}: {G}roupes
+  et alg\`ebres de {L}ie. {C}hapitre {VII}: {S}ous-alg\`ebres de {C}artan,
+  \'el\'ements r\'eguliers. {C}hapitre {VIII}: {A}lg\`ebres de {L}ie
+  semi-simples d\'eploy\'ees}, Actualit\'es Scientifiques et Industrielles
+  [Current Scientific and Industrial Topics], vol. No. 1364, Hermann, Paris,
+  1975. \MR{453824}
+
 \bibitem{Bourbaki:2002}
 Nicolas Bourbaki, \emph{Lie groups and {L}ie algebras. {C}hapters 4--6},
   Elements of Mathematics (Berlin), Springer-Verlag, Berlin, 2002, Translated
@@ -73,11 +81,6 @@ Andreas {\v{C}}ap and Jan Slov{\'a}k, \emph{Parabolic geometries. {I}},
   Mathematical Surveys and Monographs, vol. 154, American Mathematical Society,
   Providence, RI, 2009, Background and general theory. \MR{2532439
   (2010j:53037)}
-
-\bibitem{Carter:2005}
-R.~W. Carter, \emph{Lie algebras of finite and affine type}, Cambridge Studies
-  in Advanced Mathematics, vol.~96, Cambridge University Press, Cambridge,
-  2005. \MR{2188930}
 
 \bibitem{Conrad:2017}
 Brian Conrad, \emph{Notes from {B}rian {C}onrad’s course on linear algebraic
@@ -181,6 +184,11 @@ Benjamin McKay, \emph{Characteristic forms of complex {C}artan geometries},
 \bibitem{mckay2023introduction}
 Benjamin McKay, \emph{An introduction to {C}artan geometries},
   \url{https://arxiv.org/abs/2302.14457}, 2023.
+
+\bibitem{Milne:2017}
+J.~S. Milne, \emph{Algebraic groups}, Cambridge Studies in Advanced
+  Mathematics, vol. 170, Cambridge University Press, Cambridge, 2017, The
+  theory of group schemes of finite type over a field. \MR{3729270}
 
 \bibitem{Mumford/Fogarty/Kirwan:1994}
 David Mumford, John Fogarty, and Frances Kirwan, \emph{Geometric invariant
