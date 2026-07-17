@@ -26,7 +26,7 @@
 \email{b.mckay@ucc.ie}
 
 \thanks{This research was supported in part by the International Centre for Theoretical Sciences (ICTS) during a visit for participating in the program Analytic and Algebraic Geometry (Code: ICTS/aag2018/03).
-This research was largely written at the University of Catania, thanks to the hospitality of the university and of Francesco Russo.
+I am grateful for the hospitality of the University of Catania, where this paper was mostly written, and in particular to Francesco Russo.
 Thanks to Indranil Biswas, Anca \texorpdfstring{Musta\c{t}\u{a}}{Mustata} and Andrei \texorpdfstring{Musta\c{t}\u{a}}{Mustata} for help with algebraic geometry.
 This article/publication is based upon work from COST Action CaLISTA, CA21109, supported by COST (European Cooperation in Science and Technology), \url{www.cost.eu}.}
 \keywords{flag variety, Hermitian symmetric space}
@@ -343,8 +343,10 @@ Attribution 2.0 Generic (CC BY 2.0)
 \section{Introduction}
 We cannot draw a flag variety, or even its associated root system (except in low dimensions), but we can always draw its Hasse diagram.
 The Hasse diagrams as drawn by Claus Ringel \cite{Ringel2013} are very clear, so we will follow his conventions.
-Our eyes immediately spot in that Hasse diagram its uppermost component, which is always the Hasse diagram of a unique cominuscule subvariety.
-We then predict (correctly, as we will see) that each flag variety contains an associated homogeneous cominuscule subvariety, whose root system is a subsystem of the root system of the flag variety.
+Our eyes immediately spot in that Hasse diagram its uppermost component.
+This component is always the Hasse diagram of a unique cominuscule subvariety.
+We correctly predict that each flag variety contains an associated homogeneous cominuscule subvariety.
+We see the root system of the subvariety inside the root system of the flag variety.
 \begin{theorem}\label{thm:algorithm}
 Take any flag variety.
 Draw its extended Dynkin diagram (defined in \S\vref{subsec:extended.Dynkin}).
@@ -409,13 +411,14 @@ Change the hollow dot \(\dynkin A{o}\) to a cross \(\dynkin A{x}\):
 As we will prove, this is the Dynkin diagram of the associated cominuscule subvariety.
 \end{example}
 \subsection{Why the associated cominuscule subvariety matters}
-Flag varieties have few regular maps between them \cite{bakshi2023morphisms,kumar2023nonexistence,naldi2022morphisms,occhetta2023morphisms,Sierra:2021,Tango:1974,Tango:1976}, hence few flag subvarieties, so these subvarieties are surprising.
+Flag varieties have few regular maps between them \cite{bakshi2023morphisms,kumar2023nonexistence,naldi2022morphisms,occhetta2023morphisms,Sierra:2021,Tango:1974,Tango:1976}. So they have few flag subvarieties and these subvarieties are surprising.
 Cominuscule varieties are simpler than other flag varieties in many ways; we hope that these cominuscule subvarieties will shine light on their ambient flag varieties.
 
 We give some evidence for their significance in section~\vref{section:freedom}.
 We will see  that the associated cominuscule subvariety of an irreducible flag variety \((X,G)\) satisfies an open condition on its tangent spaces, which we call \emph{freedom}.
 We will see that the associated cominuscule subvariety of any irreducible flag variety is the unique submanifold of maximal symmetry group among all free subvarieties.
-We will see that all free smooth subvarieties are homogeneous, providing evidence for the conjecture that the associated cominuscule subvariety is the unique free smooth subvariety.
+We will see that all free smooth subvarieties are homogeneous.
+This supports the conjecture that the associated cominuscule subvariety is the unique free smooth subvariety.
 \begin{example}
 As in the image of Aten's rays, pick a point \(p_0\) and a line \(\ell_0\) in the projective plane \(\Proj{2}\), with \(p_0\) not lying on \(\ell_0\).
 \[
@@ -470,7 +473,7 @@ These pointed lines form a rational curve in the variety of pointed lines (\emph
 \end{tikzpicture}
 \]
 This rational curve is homogeneous under the projective transformations fixing \(p_0\) and \(\ell_0\); it is the associated cominuscule subvariety of the variety of pointed lines.
-Each Cartan subgroup of the projective transformations of the plane consists of those projective transformations which preserve three points in general position:
+Each Cartan subgroup of the projective transformations of the plane consists of the transformations which preserve three points in general position.
 \[
 \begin{tikzpicture}
 \clip[rounded corners=10pt] (0,0) -- (4,0) -- (4,2.45) -- (0,2.45) -- cycle;
@@ -486,16 +489,19 @@ Each Cartan subgroup of the projective transformations of the plane consists of 
     \fill[thick,black,draw=white] (3.5,.75) circle (2pt);
 \end{tikzpicture}
 \]
-Hence the associated cominuscule subvariety is invariant under a Cartan subgroup, and conversely there are three associated cominuscule subvarieties invariant under any given Cartan subgroup.
+Hence the associated cominuscule subvariety is invariant under a Cartan subgroup.
+Conversely there are three associated cominuscule subvarieties invariant under any given Cartan subgroup.
 The projective transformations preserving the point \(p_0\) and line \(\ell_0\) act transitively on the associated cominuscule subvariety, moving the points \(p\) of the line \(\ell_0\).
 
 Let us apply the algorithm of theorem~\vref{thm:algorithm}.
 The Dynkin diagram (defined in \S\vref{subsec:Dynkin.of.flag}) of the variety of pointed lines is \(\dynkin A{xx}\).
 The extended Dynkin diagram is 
 \[
-\dynkin[extended]A{xx}
+\dynkin[extended]A{xx}.
 \]
-from which we cut out the crosses and their edges, leaving only the affine node \(\dynkin A{o}\), and then turn the affine node \(\dynkin A{o}\) into a cross \(\dynkin A{x}\), giving us \(\dynkin A{x}\), the Dynkin diagram of the projective line, our rational curve.
+Cut out the crosses and their edges, leaving only the affine node \(\dynkin A{o}\).
+Turn the affine node \(\dynkin A{o}\) into a cross \(\dynkin A{x}\), giving us \(\dynkin A{x}\).
+This is the Dynkin diagram of the projective line, our rational curve.
 \end{example}
 \begin{example}\label{example:flag}
 Take a vector space \(V\) and write it as the direct sum of linear subspaces \(V_i\subseteq V\), say of dimension \(n_i\), \(i=1,2,\dots,k\).
@@ -510,7 +516,8 @@ So \(X:=G/P\) is the set of partial flags of dimensions
 \]
 Let \(\breve{G}\subset G\) be the subgroup preserving \(V_1\oplus V_k\) and acting as the identity on every \(V_i\), \(i=2,\dots,k-1\).
 Let \(\breve{P}\subseteq\breve{G}\) be the subgroup preserving \(V_1\).
-Then every element of \(\breve{P}\) preserves \(V_1,V_1\oplus V_2,\dots\), hence \(\breve{P}\subseteq P\).
+Then every element of \(\breve{P}\) preserves \(V_1,V_1\oplus V_2,\dots\).
+So \(\breve{P}\subseteq P\).
 So \(\breve{X}=\breve{G}/\breve{P}\subseteq X=G/P\) is the Grassmannian inside the partial flag variety \(X\).
 The points of \(\breve{X}\) are precisely the partial flags
 \[
@@ -523,13 +530,13 @@ W_k:=W_1\oplus V_2\oplus\dots\oplus V_k.
 \]
 In other words,
 \[
-(V_1\oplus V_k)\cap W_1=W_1, V_2\cap W_1=0,V_3\cap W_1=0,\dots,V_{k-1}\cap W_1=0,
+(V_1\oplus V_k)\cap W_1=W_1, V_2\cap W_1=0,V_3\cap W_1=0,\dots,V_{k-1}\cap W_1=0.
 \]
-and
+Moreover
 \[
-V_2\subseteq W_2, V_2\oplus V_3\subseteq W_3, \dots, V_2\oplus\dots\oplus V_{k-1}\subseteq W_{k-1},
+V_2\subseteq W_2, V_2\oplus V_3\subseteq W_3, \dots, V_2\oplus\dots\oplus V_{k-1}\subseteq W_{k-1}.
 \]
-i.e.
+We can phrase this as
 \[
 \dim W_1=\dim((V_1\oplus V_k)\cap W_1),
 0=\dim (V_2\cap W_1)=\dots=\dim (V_{k-1}\cap W_1),
@@ -537,31 +544,29 @@ i.e.
 and
 \[
 \dim (V_2\cap W_2)\ge n_2,\dots,
-\dim ((V_2\oplus\dots\oplus V_{k-1})\cap W_{k-1})\ge n_1+\dots+n_{k-1},
+\dim ((V_2\oplus\dots\oplus V_{k-1})\cap W_{k-1})\ge n_1+\dots+n_{k-1}.
 \]
-so \(\breve{X}\subseteq X\) is an obvious intersection of Schubert cells.
+In particular, \(\breve{X}\subseteq X\) is an intersection of Schubert cells.
 \end{example}
 \section{Review of flag varieties}
 \subsection{Flag varieties}
-A \emph{flag variety} \((X,G)\), also called a \emph{generalized flag variety} or a \emph{rational homogeneous variety}, is a complex projective variety \(X\) acted on transitively and holomorphically by a connected complex semisimple Lie group \(G\) \cite{Humphreys:1975} pp.~134--135.
+A \emph{flag variety} \((X,G)\) is a complex projective variety \(X\) acted on transitively and holomorphically by a connected complex semisimple Lie group \(G\) \cite{Humphreys:1975} pp.~134--135.
+Some authors prefer the term \emph{generalized flag variety} or \emph{rational homogeneous variety},
 We will need to make use of ineffective flag varieties, i.e. \(G\) might not act faithfully on \(X\).
 It is traditional to denote the stabilizer \(G^{x_0}\) of a point \(x_0 \in X\) as \(P\); the subgroup \(P\subseteq G\) is a connected complex linear algebraic subgroup.
-A subgroup of \(G\) is \emph{parabolic} if it is the stabilizer of a point of a flag variety \((X,G)\) of \(G\), hence the use of the letter \(P\).
+A subgroup of \(G\) is \emph{parabolic} if it is the stabilizer of a point of a flag variety \((X,G)\) of \(G\). 
 
 \subsection{Reducible flag varieties}\label{subsec:reducible}
 The center of any complex semisimple Lie group \(G\) lies in every maximal torus, so in every Cartan subgroup \cite{Borel:1991} p.~220, so in every parabolic subgroup, so acts trivially on every flag variety.
 An \emph{irreducible} flag variety is a flag variety \((X,G)\) with \(G\) a simple Lie group, and with only the center of \(G\) acting trivially.
-Every flag variety \((X,G)\), up to finite central extension of \(G\), admits a factorization 
-\begin{align*}
-X&=X_0 \times X_1 \times X_2 \times \dots \times X_s, \\
-G&=G_0 \times G_1 \times G_2 \times \dots \times G_s, 
-\end{align*}
-into irreducible flag varieties \(\pr{X_i, G_i}\), \(i>0\), and a point \(X_0=\set{x_0}\), unique up to permutation of the \((X_i,G_i)\) for \(i>0\) and isomorphism.
-The flag variety \((X,G)\) is effective if and only if all \((X_i,G_i)\) are effective, i.e. if and only if \(G_0=\set{1}\) is trivial and \(G_1,\dots,G_s\) are in adjoint form, and then \((X,G)\) is precisely (not just up to finite central extension) \cite{Akhiezer:1995} p.~74 the product 
+The \emph{product} of flag varieties \((X_1,G_1),\dots,(X_s,G_s)\) is
 \begin{align*}
 X&=X_1 \times X_2 \times \dots \times X_s, \\
 G&=G_1 \times G_2 \times \dots \times G_s.
 \end{align*}
+Every flag variety \((X,G)\), up to finite central extension of \(G\), admits a factorization into a product of (i) irreducible flag varieties and (ii) at most one factor \((X_0,G_0)\) consisting of a point \(X_0=\set{x_0}\).
+This factorisation is unique up to permutation of the \((X_i,G_i)\) for \(i>0\) and isomorphism.
+The flag variety \((X,G)\) is effective if and only if all its factors are effective, i.e. if and only if \(G_0=\set{1}\) is trivial and \(G_1,\dots,G_s\) are in adjoint form, and then \((X,G)\) is their product (not just up to finite central extension) \cite{Akhiezer:1995} p.~74.
 \subsection{Cominuscule varieties}
 A flag variety is \emph{cominuscule} if \(\LieG/\LieP=T_{x_0} X\) is a sum of irreducible complex algebraic \(P\)-modules.
 This occurs just when there is a compact subgroup \(K\subseteq G\) so that \(\pr{X,K}\) is a compact Hermitian symmetric space \cite{Kostant:1961} p.~379 Proposition 8.2, \cite{Baston/Eastwood:1989} p.~26.
@@ -609,16 +614,22 @@ A subgroup of a linear algebraic group is \emph{unipotent} if it consists of uni
 Every complex linear algebraic group \(G\) has a \emph{unipotent radical}, the unique maximal unipotent normal subgroup, which is a closed complex linear algebraic subgroup \cite{Borel:1991} p.~85 Theorem~4.5, p.~86 Theorem~4.7, p.~157 11.21.
 
 A complex linear algebraic group is \emph{reductive} if it contains a Zariski dense compact subgroup \cite{Vinberg:1994} p.~142 Theorem~2.7, Theorem~2.8.
-Every complex linear algebraic group \(G\) has a \emph{reductive Levi factor}, i.e. a maximally reductive complex linear algebraic subgroup,  unique up to conjugacy, so that \(G\) is a semidirect product of its reductive Levi factor and its unipotent radical \cite{Borel:1991} p.~158 11.22.
+A \emph{reductive Levi factor} of a complex linear algebraic group is a maximally reductive complex linear algebraic subgroup.
+Every complex linear algebraic group \(G\) has a Levi factor, unique up to conjugacy.
+The group \(G\) is a semidirect product of its reductive Levi factor and its unipotent radical \cite{Borel:1991} p.~158 11.22.
 Any Cartan subgroup is therefore a subgroup of the reductive Levi factor, after perhaps a conjugacy.
 Every compact subgroup lies in a maximal compact subgroup, which is unique up to conjugacy, so lies in the reductive Levi factor up to conjugacy \cite{Hilgert.Neeb:2012} p.~531 Theorem~14.1.3.
-After perhaps extending by some finite group of order a power of \(2\), the Weyl group embeds in \(G\) as a finite subgroup \cite{Tits:1966}, hence compact, so this group lies in the reductive Levi factor up to conjugacy.
+After perhaps extending by some finite group of order a power of \(2\), the Weyl group embeds in \(G\) as a finite subgroup \cite{Tits:1966}.
+So this group lies in the reductive Levi factor up to conjugacy.
 
 \subsection{Parabolic subgroups}
 A Zariski closed subgroup \(P\subseteq G\) of a connected linear algebraic group \(G\) is \emph{parabolic} if \(X:=G/P\) is a projective variety, and this occurs just when \((X,L)\) is a flag variety for a semisimple Levi factor \(L\subseteq G\), and this occurs just when \(P\) contains a Borel subgroup (i.e. a maximal connected solvable subgroup) \cite{Borel:1991} p.~148.
 Every parabolic subgroup is connected \cite{Borel:1991} p.~197 Proposition 14.18.
 The unipotent radical of \(P\) is denoted \(\GN\subseteq P\), and a reductive Levi factor is denoted \(\GZ\subseteq P\), so \(P=\GZ\ltimes\GN\).
-(This is potentially confusing; the reader might expect to write these as \(P_+\) and \(P_0\) since they lie in \(P\), but this notation is standard \cite{Cap/Slovak:2009} p.~293 theorem 3.2.1, and due to the presence of the grading of the Lie algebra of \(G\) which we will define.)
+(This notation is potentially confusing.
+The reader might expect to write these as \(P_+\) and \(P_0\) since they lie in \(P\).
+But our notation is standard \cite{Cap/Slovak:2009} p.~293 theorem 3.2.1.
+It is due to the presence of the grading of the Lie algebra of \(G\) which we will define.)
 A flag variety is cominuscule just when \(\GN\) is abelian \cite{Cap/Slovak:2009} p.~296 \S{}3.2.3.
 Denote the center of the unipotent radical by \(Z\defeq Z_{\GN}\).
 \subsection{Opposite parabolic subgroups}\label{subsec:opposite.parabolic}
@@ -635,14 +646,17 @@ Then \((\breve{X},\breve{G})\) is the \emph{associated cominuscule subvariety} p
 The associated cominuscule subvariety of a flag variety \((X,G)\) is uniquely determined up to \(G\)-conjugacy.
 \end{lemma}
 \begin{proof}
-Since \(G\) acts transitively on \(X\), it suffices to prove the conjugacy of any two associated cominuscule flag varieties through the same point \(x_0\in X\), hence stabilized by the same parabolic subgroup \(P:=G^{x_0}\).
+Since \(G\) acts transitively on \(X\), it suffices to prove the conjugacy of any two associated cominuscule flag varieties through the same point.
+Take a point \(x_0\in X\) and consider two associated cominuscule subvarieties passing through \(x_0\).
+Thus they are stabilized by the same parabolic subgroup \(P:=G^{x_0}\).
 So it suffices to prove that any two associated cominuscule subvarieties passing through \(x_0\) are \(P\)-conjugate.
 By definition, each associated cominuscule subvariety with a given parabolic subgroup \(P\) is determined by the group generated by \(Z,\op{Z}\).
 But \(Z\) is the center of the unipotent radical of \(P\), so determined by \(P\).
 So each associated cominuscule subvariety through the given point \(x_0\) is determined by the choice of \(\op{Z}\), the center of the unipotent radical of the choice of opposite parabolic subgroup \(\op{P}\), so determined by \(\op{P}\).
 But the opposite parabolic subgroup is uniquely determined up to \(\GN\)-conjugacy \cite{Borel:1991} p.~198 proposition~14.21, hence up to \(P\)-conjugacy.
 \end{proof}
-The tangent space to \(\breve X\) at \(x_0\) is \(\op\LieZ\); intuitively the associated cominuscule variety arises by integrating \(G\)-translates of that subspace.
+The tangent space to \(\breve X\) at \(x_0\) is \(\op\LieZ\).
+Intuitively, the associated cominuscule variety arises by integrating \(G\)-translates of that subspace.
 Those \(G\)-translates are linear subspaces transverse to the largest \(P\)-invariant holomorphic distribution on the flag variety \((X,G)\).
 Thus \(\breve X\) is an integral manifold of those \(G\)-translates; it is not a priori obvious that the \(G\)-translates have integral manifolds.
 So our interest in associated cominuscule subvarieties fits into a larger story about tangent geometry of flag varieties \cite{Hwang/Mok:1998,Hwang/Mok:1999,Kerr.Robles:2017}.
@@ -659,7 +673,8 @@ Supposing that \(V=\C[n]\), our automorphism becomes transpose inverse.
 For concreteness take \(k=4\).
 Let \(G'\subseteq G\) be the subgroup preserving \(\breve{X}\subseteq X\) and set \(P':=G'\cap P\).
 In our table, each line is a pair \(\Gamma \ M\), 
-of a group \(\Gamma\) and a matrix \(M\) with some unspecified entries, to mean that \(\Gamma\) is the group of unimodular matrices of the given form \(M\), modulo rescaling by the matrices \(\lambda I\) of that form where \(\lambda\) is an \(n^{\textnormal{th}}\) root of unity.
+of a group \(\Gamma\) and a matrix \(M\) with some unspecified entries.
+In each pair, \(\Gamma\) is the group of unimodular matrices of the given form \(M\), modulo rescaling by the matrices \(\lambda I\) of that form where \(\lambda\) is an \(n^{\textnormal{th}}\) root of unity.
 \begin{longtable}{@{}>{$\mathrlap}c<{$}>{$}c<{$}@{}}
 G&\begin{pmatrix}
 *&*&*&*\\
@@ -744,9 +759,12 @@ This occurs just when the \(\LieSL{2}\)  generated by the root vectors of \(\aa,
 So we can assume that all \(P\)-compact roots are roots of a semisimple Levi factor lying inside \(\GZ\).
 \subsection{The Dynkin diagram of a flag variety}%
 \label{subsec:Dynkin.of.flag}
-Each flag variety is determined uniquely, up to finite central extension of \(G\) and up to isomorphism, by its \emph{Dynkin diagram}, which is the Dynkin diagram of \(G\) decorated with \(\dynkin{A}{*}\) on each compact simple root and \(\dynkin{A}{x}\) on each noncompact simple root \cite{Borel:1991} p.~197 Proposition 14.18, \cite{Humphreys:1975} p.~197 Theorem${}'$.
+The Dynkin diagram of a flag variety \((X,G)\) is the Dynkin diagram of \(G\) decorated with \(\dynkin{A}{*}\) on each compact simple root and \(\dynkin{A}{x}\) on each noncompact simple root \cite{Borel:1991} p.~197 Proposition 14.18, \cite{Humphreys:1975} p.~197 Theorem${}'$.
+Each flag variety is determined uniquely, up to finite central extension of \(G\) and up to isomorphism, by its Dynkin diagram.
 \subsection{Affine extensions}
-Every Dynkin diagram sits inside its associated extended Dynkin diagram \cite{Bourbaki:2002} p.~198, \cite{Kac:2010} lecture~17, \cite{OnishchikVinberg:1990} p.~164, \(5^{\text{o}}\), given by adding one node to each component of the original Dynkin diagram, which we call the \emph{affine node}, drawn as a hollow dot \(\dynkin A{o}\), with edges attached as:
+Every Dynkin diagram sits inside its extended Dynkin diagram \cite{Bourbaki:2002} p.~198,  \cite{Bump:2013} p.~262, \cite{Kac:2010} lecture~17, \cite{OnishchikVinberg:1990} p.~164, \(5^{\text{o}}\).
+The extended Dynkin diagram has one node added to each component of the original Dynkin diagram.
+We call this node the \emph{affine node}, and draw it as a hollow dot \(\dynkin A{o}\), with edges attached as:
 \begingroup
 \small
 \begin{longtabl}{@{}%
@@ -766,7 +784,7 @@ G&Dynkin&extended\\
 \endfoot
 \bottomrule
 \endlastfoot
-A_1&\dynkin A{*}&\dynkin A{o*}\\
+A_1&\dynkin A{*}&\dynkin [extended]A1\\
 A_{r\ge 2}&\dynkin A{**.**}&\dynkin[extended]A{**.**}\\
 B_2=C_2&\dynkin B2&\dynkin[extended]B2\\
 B_{r\ge 3}&\dynkin B{***.***}&\dynkin[extended]B{***.***}\\
@@ -779,7 +797,29 @@ F_4&\dynkin F4&\dynkin[extended]F4\\
 G_2&\dynkin G2&\dynkin[extended]G2\\
 \end{longtabl}
 \endgroup
-%Parabolic geometers will note that this table extends table~3.2 of \cite{Baston/Eastwood:1989} p.~27.
+Recall that we add this node to the original Dynkin diagram to represent the negative \(\alpha_0:=-\theta\) of the highest root \(\theta\).
+We then compute the Cartan matrix as usual.
+Consider how we draw edges connecting that new node to each old node according to the usual Dynkin diagram rules.
+For any finite or extended root system, denote the Cartan matrix entry in row \(i\) column \(j\) as \(n_{ij}\).
+If \(i\ne j\) and \(|n_{ij}|\ge|n_{ji}|\), we draw \(|n_{ij}|\) edges from vertex \(j\) to vertex \(i\).
+If \(|n_{ij}|>1\) we draw an arrow pointing to node \(i\).
+\subsection{\texorpdfstring{Rank $1$}{Rank 1}}
+For \(A_1\), the Cartan matrix of the extended root system is 
+\[
+\begin{pmatrix}
+2&-2\\
+-2&2
+\end{pmatrix}
+\]
+so both off-diagonal Cartan matrix entries are \(-2\).
+Hence we draw the extended Dynkin diagram of \(A_1\) as \(\dynkin[extended]A1\) with a double edge with arrows pointing in both directions \cite{Kac:1984} p.~44 table Aff 1.
+The total number of edges of the extended \(A_r\) Dynkin diagram is \(r+1\), for any integer \(r\ge 1\).
+
+There is a different rule \cite{OnishchikVinberg:1990} p.~164 for forming Dynkin diagrams: we could instead make the edge between node \(i\) and node \(j\) have multiplicity \(n_{ij}n_{ji}\), and make an arrow from node \(j\) to node \(i\) just when \(|n_{ij}|>|n_{ji}|\).
+This rule leads to exactly the same Dynkin diagrams and extended Dynkin diagrams, except precisely for the extended Dynkin diagram of \(A_1\), yielding a quadruple edge \cite{Vinberg:1994} p.~228 table~3, 
+\cite{OnishchikVinberg:1990} p.~166 \(\begin{dynkinDiagram}[arrows=false]A{o*} \dynkinQuadrupleEdge*{2}{1}\end{dynkinDiagram}\).
+
+The choice of convention for drawing the extended Dynkin diagram of \(A_1\) does not affect our algorithm for computing the associated cominuscule subvariety: either convention yields the same result.
 \subsection{The extended Dynkin diagram of a flag variety}%
 \label{subsec:extended.Dynkin}
 Take the Dynkin diagram of a flag variety \((X,G)\).
@@ -819,7 +859,8 @@ In particular, the box of an irreducible flag variety is connected and contains 
 \label{subsection:rank.2}
 \begin{example}\label{example:rank.2}
 Here we will explain how to read our drawings.
-We pick a basis of simple roots in each root system, drawing the simple roots as empty circles:
+We pick a basis of simple roots in each root system.
+We draw the simple roots as empty circles:
 \[
 \begin{tikzpicture}[baseline=-.5]
 \begin{rootSystem}{A}
@@ -854,7 +895,9 @@ Start with the roots of \(G_2\):
 \end{rootSystem}
 \end{tikzpicture}
 \]
-Each parabolic subgroup has Lie algebra consisting of the sum of the Cartan subalgebra and the root spaces of those roots which lie on or on one side of a hyperplane, so that the compact roots are those on the hyperplane.
+Each parabolic subgroup has Lie algebra consisting of the sum of the Cartan subalgebra and the root spaces of certain roots.
+To be precise, these roots are the ones which lie on or on one side of a hyperplane.
+The compact roots are those on the hyperplane.
 Conversely, draw any hyperplane and it produces a parabolic subgroup.
 For example, here is the hyperplane of some parabolic subgroup.
 \[
@@ -873,7 +916,8 @@ Drawing both the hyperplane and roots together:
 \end{rootSystem}
 \end{tikzpicture}
 \]
-We can always pick a basis of simple roots so that every simple root lies on the hyperplane (hence a compact [i.e. uncrossed] simple root) or lies on the chosen side of the hyperplane (a noncompact [i.e. crossed] root):
+We can always pick a basis of simple roots so that every simple root lies on the hyperplane, or on the chosen side of the hyperplane.
+It is compact (so uncrossed) just when it is on the hyperplane:
 \[
 \begin{tikzpicture}[baseline=-.5]
 \begin{rootSystem}{G}
@@ -883,8 +927,8 @@ We can always pick a basis of simple roots so that every simple root lies on the
 \end{rootSystem}
 \end{tikzpicture}
 \]
-(We will always pick our hyperplane, for \(G_2\), to allow for the chosen bases of simple roots shown above.)
-We can and will pick the hyperplane to be the zero locus of a real linear function taking on value zero on uncrossed simple roots and one on crossed simple roots \cite{Cap/Slovak:2009} p.~239 Proposition~3.1.2.
+(When working with \(G_2\), we will always pick our hyperplane to allow for the chosen bases of simple roots shown above.)
+We pick the hyperplane to be the zero locus of the real linear function vanishing on uncrossed simple roots and taking value one on crossed simple roots \cite{Cap/Slovak:2009} p.~239 Proposition~3.1.2.
 Grade the roots by \(P\)-height, i.e. by sum of coefficients of crossed simple roots.
 Our hyperplane is thus always chosen so that we can see the heights, i.e. roots of a given height lie on a parallel hyperplane:
 \[
@@ -1145,7 +1189,11 @@ Any maximal irreducible flag variety \(X=G/B\) has associated cominuscule subvar
 This occurs because \(G\) has a unique highest root, whose root space generates \(Z\).
 \end{example}
 \begin{example}
-Similarly, the associated cominuscule subvariety of any adjoint variety is \(\dynkin[parabolic=1]{A}{1}=(\Proj{1},\PSL{2})\), since the adjoint varieties are precisely those with invariant contact structures, which arise from a hyperplane in each tangent space, invariant under the parabolic, hence a sum of root spaces, so a single root, negative for the parabolic, doesn't have its root vector in this hyperplane, i.e. a single root is at higher weight.
+Similarly, the associated cominuscule subvariety of any adjoint variety is \(\dynkin[parabolic=1]{A}{1}=(\Proj{1},\PSL{2})\).
+The adjoint varieties are precisely those with invariant contact structures.
+An invariant contact structure arises from a hyperplane in each tangent space, invariant under the parabolic.
+By invariance, it is a sum of root spaces.
+So a single root, negative for the parabolic, doesn't have its root vector in this hyperplane, i.e. a single root is at higher weight.
 So the associated cominuscule subvariety is complementary to the hyperplane, one dimensional, hence a projective line.
 \end{example}
 \section{The associated cominuscule subvariety is cominuscule}\label{subsection:associated.cominuscule}
@@ -1156,7 +1204,7 @@ X&=X_0\times X_1\times X_2\times\dots\times X_s, \\
 G&=G_0\times G_1\times G_2\times\dots\times G_s, 
 \end{align*}
 into irreducible flag varieties \(\pr{X_i, G_i}\), \(i>0\), and a point \(X_0=\set{x_0}\).
-Then clearly
+Then
 \[
 P=G_0\times P_1\times P_2\times\dots\times P_s,
 \]
@@ -1203,7 +1251,7 @@ The vector space \(\LieZ'\) is therefore an irreducible \(\GZ\)-module \cite{Kna
 
 Pick a root \(\aa\in B\).
 It suffices to prove that \(\aa\in B'\), i.e.~\(P\)-maximal.
-Pick a root vector \(e_{\aa}\in\LieZ\) for a root \(\aa\).
+Pick a root vector \(e_{\aa}\in\LieZ\) for root \(\aa\).
 Suppose that \(\aa+\bb\) is a root, for some root \(\bb\) of positive \(P\)-height.
 Then \(0\ne\lb{e_{\aa}}{e_{\bb}}\in\gr[\aa+\bb]\LieG\) for some root vector \(e_{\bb}\) of \(\bb\) \cite{Serre:2001} p.~46 2.12.
 But then \(e_{\aa}\) is not in \(\LieZ\), i.e. does not centralize \(\LieG_+\).
@@ -1253,11 +1301,14 @@ It also suffices to assume that \((X,G)\) is an irreducible flag variety, as oth
 The Lie algebra \(\LieZ\) of the center \(Z\) of the unipotent radical \(G_+\) of \(P\) is the sum of the root spaces of the box, i.e. of the \(P\)-maximal roots.
 Let \(a\) be an automorphism of \(G\) which changes the sign of the \(P\)-grading of the roots; see \S\vref{subsec:opposite.parabolic} where we constructed one such automorphism.
 So \(a\LieZ\) is the sum of the root spaces of the roots of minimal \(P\)-grade, the opposite box.
-Under bracket, these root spaces generate only root vectors and coroots, up to scaling, so the Lie algebra \(\breve\LieG\) of \(\breve{G}\) is the sum of some such, with a coroot only arising when we bracket the root vectors of the associated root and its negative. 
+Under bracket, these root spaces generate only root vectors and coroots, up to scaling.
+Hence the Lie algebra \(\breve\LieG\) of \(\breve{G}\) is the sum of some such. A coroot arises only when we bracket the root vectors of the associated root and its negative. 
 So \(\breve\LieG\) contains all of the root vectors of the root system generated by the box.
 It also contains their brackets.
 Hence it contains the complex semisimple subalgebra with that root system.
-That subalgebra is generated in the same way, by the box root vectors, as every complex semisimple Lie group is generated from the root vectors of a basis of roots \cite{Serre:2001} p.~43 Theorem~1, so \(\breve\LieG\) is that subalgebra, so is complex semisimple.
+That subalgebra is generated in the same way, by the box root vectors.
+Every complex semisimple Lie group is generated from the root vectors of a basis of roots \cite{Serre:2001} p.~43 Theorem~1.
+So \(\breve\LieG\) is that subalgebra, so is complex semisimple.
 By lemma~\vref{lemma:breve.G.connected},  \(\breve{G}\) is a complex semisimple Lie group.
 Since its root system lies inside that of \(G\), its Cartan subgroup is a subgroup of the Cartan subgroup of \(G\), generated by its coroots.
 Note that \(P\) contains the Cartan subgroup of \(G\), hence that of \(\breve{G}\), and contains \(Z\), so contains the parabolic subgroup of \(\breve{G}\) generated by the box.
@@ -1285,7 +1336,7 @@ Their root vectors lie in \(\breve\LieP\).
 So the difference of their root vectors lies in \(\breve\LieG\), since it is semisimple.
 So \(\aa\) is a \(\breve{G}\)-root, and a difference of \(\breve{P}\)-maximal roots.
 
-Suppos that every such root string has a single root in it.
+Suppose that every such root string has a single root in it.
 So it is a root string of length \(1\).
 Reflection in \(\aa\) fixes all roots in the box, i.e. all \(P\)-maximal roots. Hence \(\aa\) is perpendicular to the box.
 Take \(\breve\Roots\) to be the root system generated by the box.
@@ -1293,16 +1344,18 @@ Reflection in \(\aa\) therefore fixes every root in \(\breve\Roots\).
 Hence \(\aa\) is perpendicular to every root in \(\breve\Roots\).
 
 Any two root subsystems which are mutually perpendicular arise from factors of the associated semisimple Lie group.
-Hence the \(P\)-compact roots divide into (1) \(\breve\Roots\), i.e. those roots which are differences of \(P\)-maximal roots, i.e. \(\breve{P}\)-compact roots and (2) those perpendicular to \(\breve\Roots\), forming a root subsystem of the \(P\)-compact roots giving a complex semisimple subgroup of \(\GZ\).
+Hence the \(P\)-compact roots divide into (1) \(\breve\Roots\) and (2) those perpendicular to \(\breve\Roots\).
+The roots of \(\breve\Roots\) are those which are differences of \(P\)-maximal roots, i.e. \(\breve{P}\)-compact roots.
+The roots perpendicular to \(\breve\Roots\) form a root subsystem of the \(P\)-compact roots giving a complex semisimple subgroup of \(\GZ\).
 This subgroup acts trivially on \(\breve\LieG\) because it is generated by root vectors in a perpendicular root subsystem.
 The root system \(\breve\Roots\) is graded into the \(P\)-minimal roots (grade \(-1\)), differences of \(P\)-maximal roots (grade \(0\)) and \(P\)-maximal roots (grade \(1\)).
 The Lie algebra \(\breve\LieG\) consists of the sum of the root vectors of the \(\breve\Roots\)-spaces, and their coroots (grade \(0\)).
 The subalgebra \(\breve\LieP\defeq\LieP\cap\breve\LieG\) consists precisely of the \(0\) and \(1\) grades.
 Note that \(\breve\LieP\) acts on \(\LieZ\) as \(\breveLieGZ\defeq\LieGZ\cap\breve\LieG\), i.e. as a sum of irreducible \(\breve\LieP\)-modules, so \(\breve{X}=\breve{G}/\breve{P}\) is cominuscule.
 
-Recalle that \(\LieZ\) is an irreducible \(\GZ\)-module.
+Recall that \(\LieZ\) is an irreducible \(\GZ\)-module.
 If we start at the highest root, we can pass from it via root strings to get to any \(P\)-maximal root, i.e. anywhere in the box.
-As we do this, we repeatedly passing between \(P\)-maximal roots \(\aa,\bb\) by subtracting a \(\breve{P}\)-compact positive root \(\aa-\bb\).
+As we do this, we repeatedly pass between \(P\)-maximal roots \(\aa,\bb\) by subtracting a \(\breve{P}\)-compact positive root \(\aa-\bb\).
 Bracketing a root vector \(\XX{\aa-\bb}\) of root \(\aa-\bb\) takes \(\XX{\aa}\) to a nonzero multiple of \(\XX{\bb}\).
 Hence \(\LieZ\) is an irreducible \(\breveLieGZ\)-module, hence an irreducible \(\breve\LieP\)-module.
 As we have seen~\vpageref{subsec:reducible}, the number of irreducible modules of the parabolic subgroup is the number of irreducible factors of its flag variety.
@@ -1338,7 +1391,7 @@ So \(\breve\LieG_+=\LieZ\) is abelian, so its own center: \(\breve\LieZ=\breve\L
 \end{proof}
 
 \subsection{Automorphisms of the associated cominuscule subvariety}\label{subsec:autos}
-\begin{example}
+\begin{example}\label{example:B.three.Borel}
 The flag variety \((X,G)=(B_2/P,B_2)\), where \(P\subseteq B_2\) is the Borel subgroup:
 \[
 \drawroots{B}{3} 
@@ -1353,7 +1406,8 @@ has associated cominuscule subvariety
 \end{rootSystem}
 \end{tikzpicture}
 \]
-a rational curve \((\breve{X},\breve{G})=(\Proj{1},\PSL{2})\), invariant under not only its automorphism group \(\breve{G}=A_1=\PSL{2}\), which we see in our diagram, but also, as we will see, under rescaling by this root:
+This is a rational curve \((\breve{X},\breve{G})=(\Proj{1},\PSL{2})\).
+The rational curve invariant under not only its automorphism group \(\breve{G}=A_1=\PSL{2}\), which we see in our diagram, but also, as we will see, under rescaling by this root:
 \[
 \begin{tikzpicture}[baseline=-.5]
 \begin{rootSystem}{B}
@@ -1385,8 +1439,8 @@ Conversely, consider the root
 It doesn't belong to the Lie algebra of \(P\), so doesn't vanish at \(x_0\).
 Commuting with the root vectors of \(\breve{G}\), it is \(\breve{G}\)-invariant, so it doesn't vanish at any point of \(\breve{X}\).
 If it were tangent to \(\breve{X}\) at some point of \(\breve{X}\),  \(\breve{G}\)-invariance would force it to be tangent at every point.
-But every holomorphic vector field on the projective line \(\breve{X}=\Proj{1}\) has a zero,
-(Indeed, every holomorphic vector field on any flag variety has a zero, since every automorphism has a fixed point \cite{Tits:1962}.)
+But every holomorphic vector field on the projective line \(\breve{X}=\Proj{1}\) has a zero.
+Indeed, every holomorphic vector field on any flag variety has a zero, since every automorphism has a fixed point \cite{Tits:1962}.
 Hence this root vector is a vector field on \(X\), nowhere tangent to \(\breve{X}\).
 \end{example}
 \subsection{Computing the automorphism Lie algebra}
@@ -1410,8 +1464,14 @@ the maximal reductive \(\LieG_0\), and
 the root spaces of all positive roots perpendicular to all \(P\)-maximal roots.
 \end{itemize}
 \end{theorem}
+\begin{example}
+In example~\vref{example:B.three.Borel}, we saw that the third case above is not redundant: there is a positive root perpendicular to all \(P\)-maximal roots in that example, and this root is not a root of the maximal reductive \(\LieG_0\), since in that example, \(\LieG_0\) is abelian.
+\end{example}
 \begin{proof}
 Clearly \(G'\subseteq G\) is a complex linear algebraic subgroup containing \(\breve{G}\), hence acts transitively on \(\breve{X}\).
+So we only need to prove that the Lie algebra \(\LieG'\) of \(G'\) is the sum of the appropriate root spaces.
+To see that \(\LieG'\) is a sum of root spaces, we need to prove that it contains the Cartan subalgebra of \(\LieG\).
+
 Since \(\breve{X}\) is a projective variety and \(G'\) is a linear algebraic group acting transitively on \(\breve{X}\), the stabilizer \(P':=P\cap G'\) of the point \(x_0\in X\) is a parabolic subgroup of \(G'\) \cite{Borel:1991} p.~148, so contains a Borel subgroup of \(G'\).
 
 Let \(G'_0\subset G'\) be the connected component of the identity.
@@ -1424,7 +1484,7 @@ Claim: \(P'\) is the normalizer of \(\breve{G}P\) in \(P\).
 Proof: by definition \(p\in P'\) if and only if \(p\in P\) and \(p\breve{X}=\breve{X}\).
 The points of \(\breve{X}\) have the form \(gx_0\) for \(g\in\breve{G}\), unique up to multiplying by an element of \(P\), i.e. \(pgP=g'P\), for some \(g'\in\breve{G}\).
 So \(p\in P'\) if and only if \(p\in P\) and \(p\breve{G}P\subseteq\breve{G}P\).
-Since \(P'\) is clearly a group, \(p\in P'\) just when \(p\in P\) and \(p\breve{G}P=\breve{G}P\), or equivalently, 
+Since \(P'\) is a group, \(p\in P'\) just when \(p\in P\) and \(p\breve{G}P=\breve{G}P\), or equivalently, 
 \[
 p\breve{G}Pp^{-1}=\breve{G}P.
 \]
@@ -1437,37 +1497,40 @@ Thus \(G_0\subseteq P'\).
 Hence \(P'\) contains the Cartan subgroup.
 So the Lie algebra \(\LieP'\) of \(P'\) is a sum of the Cartan subalgebra together with various root spaces.
 Since \(P'\) lies inside \(G'\), the Lie algebra of \(G'\) is also a sum of the Cartan subalgebra together with various root spaces.
+We will say that a root \(\aa\) of \(G\) is a \emph{\(G'\)-root} if its root space lies in \(\LieG'\), a \emph{\(P'\)-root} if its root space lies in \(\LieP'\).
 
+The remainder of the proof consists in identifying the \(G'\)-roots.
+First, we find some roots which are obviously \(G'\)-roots.
 Take a root \(\aa\) perpendicular to all roots in the box, i.e. to all \(P\)-maximal roots.
 It is then also perpendicular to their negatives, and so its associated root vector \(e_{\aa}\) brackets to zero with all of the root vectors \(e_{\bb}\) of all of those roots, and hence of all roots \(\bb\) of \(\breve{G}\).
 As we argued in \S\vref{subsec:autos}, \(\aa\) is \(P\)-nonnegative if and only if \(e_{\aa}\) is tangent everywhere to \(\breve{X}\), hence generates an automorphism of \(\breve{X}\).
-So the Lie algebra \(\LieG'\) of \(G'\) contains the root vector \(e_{\aa}\) just when \(\aa\) is  \(P\)-nonnegative, so either \(P\)-compact or \(P\)-positive.
+So the Lie algebra \(\LieG'\) of \(G'\) contains the root vector \(e_{\aa}\) of a root \(\aa\) perpendicular to the box roots just when \(\aa\) is  \(P\)-nonnegative, so either \(P\)-compact or \(P\)-positive.
 If \(\aa\) is \(P\)-compact, \(\aa\) is a root of \(\LieG_0\), so we may assume that \(\aa\) is \(P\)-positive, hence positive.
-So far, we have affirmed that the roots which belong to the box or its negative or to the maximal reductive or are positive and perpendicular to the box have root spaces in \(\LieG'\).
-We have also affirmed that the roots which are negative and perpendicular to the box have root spaces disjoint from \(\LieG'\).
+
+So far, we have affirmed that the roots which belong to the box or its negative or to the maximal reductive or are positive and perpendicular to the box are \(G'\)-roots.
+We have also affirmed that the roots which are negative and perpendicular to the box have root spaces disjoint from \(\LieG'\), so are not \(G'\)-roots.
 
 We are left to consider a root \(\aa\) which is not in the box, and \(-\aa\) is not in the box, and \(\aa\) is not a root of the maximal reductive, and \(\aa\) is not perpendicular to the box.
-If \(\aa\) is \(P\)-compact, its root space lies in \(\LieGZ\).
-So we can assume that \(\aa\) is a \(P\)-noncompact root.
-We need to prove that the root vector \(e_{\aa}\) of \(\aa\) is not in \(\LieG'\).
+We need precisely to prove that \(\aa\) is not a \(G'\)-root, i.e.\ the root vector \(e_{\aa}\) of \(\aa\) is not in \(\LieG'\).
 
 By definition \(P'\) preserves \(\breve\LieG+\LieP\).
 Pick a root \(\mx\bb\) in the box, not perpendicular to our \(P\)-submaximal \(P\)-positive root \(\aa\).
 Note that if two roots have more than a right angle between them, then their sum is a root and their root vectors have nonzero Lie bracket \cite{Serre:2001} p.~29.
-Suppose that \(\aa\) is \(P\)-positive.
 The root system generated by \(\aa\) and \(\mn\bb:=-\mx\bb\) is of rank \(2\).
 Our \(P\)-grading grades that rank \(2\) root system.
 Our pictures above classify every parabolic subalgebra of every rank \(2\) simple Lie algebra.
 In those pictures, we see that the root vectors of \(\aa\) and \(\mn\bb\) have more than a right angle between them and that their sum is a root.
 Their \(P\)-grading is at least that of \(\mn\bb\), \(P\)-negative.
 Hence the Lie bracket of their root vectors is not in \(\LieP\), but also is not \(P\)-minimal, so not in \(\breve\LieG\).
-Hence their root vectors bracket out of \(\breve\LieG+\LieP\), 
-Hence the Lie algebra \(\LieG'\) of \(G'\) contains no such.
+Hence their root vectors bracket out of \(\breve\LieG+\LieP\).
+Hence the Lie algebra \(\LieG'\) of \(G'\) does not contain the root space of \(\aa\).
+In other words, \(\aa\) is not a \(G'\)-root.
 
 On the other hand, if \(\aa\) is \(P\)-negative, the same argument applies with \(\mn\bb\) replaced by \(\mx\bb\).
-So the Lie algebra of \(\LieG'\) does not contain \(\pm\aa\).
+So neither \(\aa\) nor \(-\aa\) are \(G'\)-roots.
 
-Note that \(\LieP'\) contains the root vectors of precisely the \(P\)-maximal roots and the \(P\)-positive roots perpendicular to them, and so consists precisely of these root vectors and the Cartan subalgebra.
+Note that the \(P'\)-roots are precisely the \(P\)-maximal roots and the \(P\)-positive roots perpendicular to them.
+Thus \(\LieP'\) is the sum of the Cartan subalgebra with the roots spaces of these roots.
 \end{proof}
 
 \begin{lemma}
@@ -1491,7 +1554,7 @@ In the proof of theorem~\vref{theorem:aut.Lie.alg}, we saw that \(P'\) is theref
 \begin{theorem}
 For any flag variety \((X,G)\), the group \(G'\) of automorphisms of the associated cominuscule subvariety \(\breve{X}\subseteq X\) acts on \(\breve{X}\) as precisely the biholomorphisms of \(\breve{X}\) arising from elements of \(\breve{G}\): the morphisms
 \[
-\breve{G}\to\Aut{X}, G'\to\Aut{X}
+\breve{G}\to\Aut{\breve X}, G'\to\Aut{\breve X}
 \]
 have the same image.
 The first morphism has kernel a finite central subgroup of the reductive Levi factor \(\breve{G}_0\subseteq\breve{P}\), central in \(\breve G\).
@@ -1508,24 +1571,29 @@ So \(\LieG_0\) does not act trivially on \(\breve{\LieG}/\breve{\LieP}=T_{x_0} \
 So \(\LieG_0\) acts on \(\breve{\LieG}/\breve{\LieP}=T_{x_0} \breve{X}\) as a sum of irreducibles.
 Each simple factor acts in an irreducible representation.
 So \(G_0\) acts almost effectively.
-Quotienting out the root spaces of the roots perpendicular to the box, and the associated Cartan subalgebra, gives a morphism of Lie algebra \(\LieG'\to\breve\LieG\), an isomorphism on \(\breve\LieG\subseteq\LieG'\).
+Quotienting out the root spaces of the roots perpendicular to the box, and the associated Cartan subalgebra, yields a morphism of Lie algebra \(\LieG'\to\breve\LieG\), an isomorphism on \(\breve\LieG\subseteq\LieG'\).
 Since \(G'\) is connected, this map has connected image.
 \end{proof}
 
 \section{The Hasse diagram of a root system}
 Recall the \emph{Hasse diagram} of a root system \cite{Ringel2013}.
-Given an irreducible reduced root system with a choice of basis of simple roots, and some ordering of the simple roots, a \emph{successor} of a positive root \(\alpha\) is a positive root of the form \(\alpha+\beta\) for a positive simple root \(\beta\).
+Take an irreducible reduced root system.
+Pick a choice of basis of simple roots, and an ordering of the simple roots. 
+A \emph{successor} of a positive root \(\alpha\) is a positive root of the form \(\alpha+\beta\) for a positive simple root \(\beta\).
 The \emph{Hasse diagram} draws dots on the plane, one for each positive root and a line from each root upward to each of its successors, labelled by the number of the simple root by which they differ.
 The \emph{grade} of a positive root is the total number of simple roots needed to add up to it.
 Positive roots of equal grade are drawn on the same horizontal line.
-(Note that the Hasse diagrams of this paper are \emph{not} the Hasse diagrams of flag varieties described in \cite{Baston/Eastwood:1989} chapter 4; we draw the roots while they draw the Weyl group.)
+(Note that the Hasse diagrams of this paper are \emph{not} the Hasse diagrams of flag varieties described in \cite{Baston/Eastwood:1989} chapter 4.
+We draw the roots while they draw the Weyl group.)
 \begin{example}
 The Hasse diagram of \(C_4\) is
 \hasseDiagrams{C4}
 \tikzset{/Lie Hasse diagram,attach Dynkin diagram=true,three D=true}
 \end{example}
 In our pictures, the Hasse diagrams look three dimensional.
-We won't make any mathematical description of the third dimension, but the reader can see that the vertices of the Dynkin diagram form the intersection of a horizontal plane with the three dimensional object we draw, so we imagine the Hasse diagram as ``growing'' out of the Dynkin diagram.
+We won't make any mathematical description of the third dimension.
+The reader can see that the vertices of the Dynkin diagram form the intersection of a horizontal plane with the three dimensional object we draw.
+Imagine the Hasse diagram as ``growing'' out of the Dynkin diagram.
 The Hasse diagrams are
 \begin{enumerate}
 \item[\(A_r\)] Write the simple roots of \(A_r\) as \(\alpha_1,\alpha_2,\dots,\alpha_r\).
@@ -1540,7 +1608,9 @@ An edge labelled \(i+g\) goes up to the right, if \(i+g<r\).
 \item[\(C_r\)] The same as the \(B_r\), but all rightward edge labels in the upper copy of \(A_r\) diminished by one.
 \hasseDiagrams{C5}
 \item[\(D_r\)] 
-Take two \(A_{r-1}\) Hasse diagrams, with one reflected as above, but instead of gluing together, for each matching pair of vertices along the two edges, add a pair of points, connecting one vertex to each with an edge labelled \(r-1\) and an edge labelled \(r\), to make a square with opposite sides having the same label \cite{Bourbaki:2002} p.~256.
+Take two \(A_{r-1}\) Hasse diagrams, with one reflected as above.
+Instead of gluing together, for each matching pair of vertices along the two edges, add a pair of points.
+Connect one vertex to each with an edge labelled \(r-1\) and an edge labelled \(r\), to make a square with opposite sides having the same label \cite{Bourbaki:2002} p.~256.
 \hasseDiagrams{[three D=true]D7}
 \end{enumerate}
 We draw the Hasse diagrams of all of the exceptional Lie algebras in table~\vref{table:exceptionals}.
@@ -1560,9 +1630,12 @@ The map
 \] 
 is \(G\)-equivariant, and invariant under the right \(P\)-action
 \[
-(g,v)p:=(gp,p^{-1}v),
+(g,v)p:=(gp,p^{-1}v).
 \] 
-so descends to a holomorphic map \(G\times^P V\to\mathbf{V}\), linear on fibers, descending to the identity map on \(X\), hence a vector bundle isomorphism, as the reader can easily check; for details and generalizations see \cite{Cap/Slovak:2009} p.~52 Proposition 1.4.3, \cite{Tirao/Wolf:1970} p.~17.
+It thus descends to a holomorphic map \(G\times^P V\to\mathbf{V}\), linear on fibers.
+It descends to the identity map on \(X\).
+Hence it is a vector bundle isomorphism, as the reader can easily check.
+For details and generalizations see \cite{Cap/Slovak:2009} p.~52 Proposition 1.4.3, \cite{Tirao/Wolf:1970} p.~17.
 \end{proof}
 Each filtration of \(P\)-modules induces a filtration of homogeneous vector bundles.
 The associated graded \(P\)-module yields the associated graded vector bundle.
@@ -1580,7 +1653,7 @@ The Lie algebra \(\LieG\) of \(G\) is also filtered:
 a finite sum.
 Note that \(\LieP=\LieG^0\) and \(\LieG_+=\LieG^1\).
 The Lie algebra \(\LieP\) of \(P\) is graded and filtered in the same way, as it is invariant under the Cartan subgroup so is also a direct sum of root spaces.
-This gives a filtered \(P\)-module structure to \(\LieG,\LieP,\LieP^{\vee},\LieG/\LieP,\LieG_+\), hence to the associated vector bundles associated to these \(P\)-modules.
+This induces a filtered \(P\)-module structure on \(\LieG,\LieP,\LieP^{\vee},\LieG/\LieP,\LieG_+\), hence on the associated vector bundles associated to these \(P\)-modules.
 
 \subsection{The Hasse diagram of a flag variety}\label{subsection:define.Hasse}
 The \emph{Hasse diagram} of a flag variety \((X,G)\) is the Hasse diagram of the Lie group \(G\), but erase the lines labelled by noncompact simple roots.
@@ -1589,7 +1662,8 @@ Compare \dynkin E6 to \dynkin E{*x**x*}:
 \hasseDiagrams{E6;[three D=false,attach Dynkin diagram=true]E{*x**x*}}
 \end{example}
 The compact roots (simple or not) we draw as dots, and all other roots we draw as crosses.
-The reason we draw these diagrams is to unveil as much as we can about the tangent bundles \(TX\) of flag varieties \((X,G)\); we will see that we are drawing the decomposition of the associated graded vector bundle of the tangent bundle into invariant subbundles.
+The reason we draw these diagrams is to unveil as much as we can about the tangent bundles \(TX\) of flag varieties \((X,G)\).
+We will see that we are drawing the decomposition of the associated graded vector bundle of the tangent bundle into invariant subbundles.
 Again we stress that this Hasse diagram is \emph{not} the Hasse diagram associated to the Weyl group \cite{Baston/Eastwood:1989} chapter 4.
 
 The tangent bundle arises, as does every homogeneous vector bundle on a flag variety by lemma~\vref{lemma:hom.v.b}, as the homogeneous vector bundle associated to a \(P\)-module.
@@ -1608,7 +1682,11 @@ To each connected component of the Hasse diagram, we associate the \(P\)-module 
 Drawing only the components whose roots are crossed, this is precisely the decomposition of \(\LieG/\LieP\) into irreducible \(G_0\)-modules.
 The components whose roots are uncrossed form the Hasse diagram of the compact roots, i.e. of the semisimple Levi factor of \(P\), as we will prove in corollary~\vref{corollary:irreps}.
 Hence the crossed root components in our pictures are the \(G\)-invariant decompositions of the associated graded vector bundle of \(TX\).
-(Changing sign of each root takes positive roots to negative roots and is an isometry, arising from our automorphism \(a\) as above, mirror reflecting the Hasse diagram, so when we draw the Hasse diagram, the reader can think of it as drawing positive or drawing negative roots, as required.)
+
+Changing sign of each root takes positive roots to negative roots.
+It is an isometry, arising from our automorphism \(a\) as above.
+It is a mirror reflection of the Hasse diagram.
+So when we draw the Hasse diagram, the reader can think that we are drawing positive or drawing negative roots, as required.
 \begin{example} 
 Compare \dynkin F4 to \dynkin F{***x}:
 \hasseDiagrams{F4;[three D=false,attach Dynkin diagram=true]F{***x}}
@@ -1629,11 +1707,16 @@ A positive root, expressed as a sum of simple roots, has coefficient of the asso
 We spot the crossed node immediately in the list of Dynkin diagrams of cominuscule varieties in table~\vref{table:boxes}.
 \begin{proof}
 Suppose that \((X,G)\) is an irreducible flag variety whose Dynkin diagram has more than one noncompact root.
-Each connected component of the Hasse diagram of \((X,G)\) is a set of roots whose root spaces sum to an irreducible \(\GZ\)-module: irreducible by connectivity, and a module by invariance under the Cartan subgroup and the root vectors of the positive simple roots \cite{Baston/Eastwood:1989} p.~26.
+Each connected component of the Hasse diagram of \((X,G)\) is a set of roots whose root spaces sum to a vector space.
+This vector space is a \(\GZ\)-module by invariance under the Cartan subgroup and the root vectors of the positive simple roots \cite{Baston/Eastwood:1989} p.~26.
+This module is irreducible by connectivity.
 
 Recall that every positive \(G\)-root is obtained by repeated sum of simple roots, stepping up the Hasse diagram of \(G\) \cite{Serre:2001} p.~32 proposition~5.
-As we walk around the Hasse diagram of \(G\), every upward step we take along a noncompact root creates another step in the filtration of \(\LieG_+\), and dually in the dual filtration of \(\LieG/\LieP\), passing out of a component of the Hasse diagram of \((X,G)\).
-The highest root contains a positive linear combination of all simple roots, so we can only reach it by taking at least one step from each \(P\)-noncompact root.
+Walk around the Hasse diagram of \(G\).
+Every upward step we take along a noncompact root creates another step in the filtration of \(\LieG_+\).
+Dually it creates another step in the dual filtration of \(\LieG/\LieP\). It passes out of a component of the Hasse diagram of \((X,G)\).
+The highest root contains a positive linear combination of all simple roots.
+We can only reach it by taking at least one step from each \(P\)-noncompact root.
 So the presence of two or more noncompact \(P\)-roots ensures that \(\LieG/\LieP\) is not an irreducible \(P\)-module.
 Similarly, if we can step up the Hasse diagram taking two steps upward that use the same root, then \(\LieG/\LieP\) is not an irreducible \(P\)-module.
 \end{proof}
@@ -1644,9 +1727,11 @@ Up to possible relabeling of the roots, the boxes of the irreducible cominuscule
 \def\noDiag#1{\multicolumn{2}{p{11cm}}{#1}\\}
 \begin{longtable}{>{$}l<{$}p{1.75cm}p{9.25cm}}
 \endfirsthead\endhead\endfoot\endlastfoot
-A_r&\noDiag{With one crossed root, the rectangular box of points of the \(A_r\) Hasse diagram \(\ge\) the crossed root in the Hasse diagram ordering, labels decreasing \(k-1,k-2,\dots,1\) along the lower left side, and increasing \(k+1,k+2,\dots,r\) along the lower right side.}
+A_r&\noDiag{Crossed node \(k\): the rectangular box of points of the \(A_r\) Hasse diagram \(\ge\) the crossed root in the Hasse diagram ordering.
+Labels decrease \(k-1,k-2,\dots,1\) along the lower left side, and increase \(k+1,k+2,\dots,r\) along the lower right side.}
 B_r&\noDiag{The line segment of points above \(1\) in the Hasse diagram ordering, \(2r-1\) points in all, with labels \(2,3,\dots,r-1,r,r,r-1,\dots,3,2\).}
-C_r&\noDiag{the triangle of points above \(r\) in the Hasse diagram ordering, i.e. a copy of the \(A_r\) reflected Hasse diagram with rightward labels diminished by \(1\).}
+C_r&\noDiag{The triangle of points above \(r\) in the Hasse diagram ordering.
+Thus a copy of the \(A_r\) reflected Hasse diagram with rightward labels diminished by \(1\).}
 D_r&\dynkin{D}{x*.****}&Above \(1\) in the Hasse diagram ordering, a line segment with labels \(2,3,\dots,r-2\), then a square with labels \(r-1,r\) on opposite sides, then a line segment with labels \(r-2,r-3,\dots,3,2\).\\
 D_r&\dynkin{D}{**.**x*}&
 The triangle above \(r\) in the Hasse diagram ordering , i.e. a copy of the \(A_{r-1}\) reflected Hasse diagram.\\
@@ -1659,7 +1744,8 @@ In particular, each box, as a labelled Hasse diagram, up to label permutations, 
 \end{lemma}
 \begin{proof}
 Billey \& Lakshmibai \cite{Billey/Lakshmibai:2000} p.~120 classify the irreducible cominuscule varieties by their Dynkin diagrams, as above.
-(Note that the classification of compact Hermitian symmetric spaces is due to Cartan; see \cite{Kostant:1961} p.~379 Proposition~8.2, \cite{Baston/Eastwood:1989} p.~26, but it requires some effort to see that it coincides with the classification of cominuscule varieties.)
+The classification of compact Hermitian symmetric spaces is due to Cartan; see \cite{Kostant:1961} p.~379 Proposition~8.2, \cite{Baston/Eastwood:1989} p.~26.
+It requires some effort to see that it coincides with the classification of cominuscule varieties.
 
 From the classification, we see that each irreducible cominuscule variety has a unique crossed (i.e. \(P\)-noncompact) root.
 When the highest root is written as a linear combination of simple roots, Billey \& Lakshmibai prove that an irreducible flag variety is cominuscule just when that unique crossed root appears in that linear combination with coefficient \(1\) \cite{Billey/Lakshmibai:2000} p.~120.
@@ -1678,7 +1764,7 @@ It therefore maps flag varieties
 \dynkin[ordering=Carter] E{x******x}.
 \]
 In section~\vref{sec:excep.Hasses}, we can see the Hasse diagrams of \(E_7\) and \(E_8\).
-By knocking out the relevant edges, we see that the boxes of either of these flag varieties consist of a single \(\dynkin A{x}\).
+By removing the relevant edges, we see that the boxes of either of these flag varieties consist of a single \(\dynkin A{x}\).
 Hence both flag varieties have associated cominuscule subvariety a projective line \(\dynkin A{x}\).
 In the Hasse diagrams, we see that the box of the \(E_7\)-variety maps to another \(\dynkin A{x}\) lower down, not to the box of the \(E_8\)-variety.
 So the associated cominuscule subvariety of the \(E_7\)-variety maps to a rational curve tangent to that \(E_8\)-invariant subsheaf of the tangent bundle, not to the associated cominuscule subvariety of the \(E_8\)-variety.
@@ -1716,7 +1802,7 @@ Look at the Hasse diagram of the group \(B_8\) \dynkin B8
 \hasseDiagrams{[three D=false,attach Dynkin diagram=true]B8}
 Compare the Hasse diagram of its flag variety \dynkin B{****x*x*}:
 \hasseDiagrams{[three D=false,attach Dynkin diagram=true]B{****x*x*}}
-All we did to draw the second picture is to knock out the edges in the first picture which are labelled by crossed roots.
+Knock out the edges labelled by crossed roots to pass from the first picture to the second.
 We see the box: the roots attached to the highest root:
 \[
 \begin{tikzpicture}
@@ -1750,9 +1836,13 @@ For any irreducible flag variety \((X,G)\), the lowest box root \(\breve\alpha\)
 \begin{proof}
 Recall that the \(\breve G\)-root system is the subsystem of the \(G\)-root system generated by the \(P\)-maximal roots.
 The \(\breve P\)-compact roots are among the \(P\)-compact roots: precisely those not perpendicular to all \(\breve G\)-roots.
-We can move around the box from the highest root downwards to \(\breve\alpha\) along a sequence of \(\breve P\)-compact roots, either in the Hasse diagram of \((X,G)\) or in the subdiagram which is the Hasse diagram of \((\breve X,\breve G)\).
-So \(\breve\alpha\) is the lowest in either.
-But in the \((\breve X,\breve G)\)-diagram, we can always go downward along compact roots until we hit the crossed root, since the box is connected and consists of all of the roots with positive coefficient of the crossed root.
+For any root system, we can move downwards from the highest root via steps, each step subtracting a simple root.
+The steps that stay inside the box are \(\breve P\)-compact roots, since the \(\breve P\)-compact roots are the differences of the box roots by lemma~\vref{lemma:box.roots}.
+So we can move around the box from the highest root downwards to \(\breve\alpha\) along a sequence of \(\breve P\)-compact roots.
+This is true either in the Hasse diagram of \((\breve X,\breve G)\) or in the Hasse diagram of \((X,G)\).
+So \(\breve\alpha\) is the lowest box root in the Hasse diagram of \((\breve X,\breve G)\).
+In the \((\breve X,\breve G)\)-diagram, we can always go downward along compact roots until we hit the crossed root, since the box is connected and consists of all of the roots with positive coefficient of the crossed root.
+So \(\breve\alpha\) is the crossed root of \((\breve X,\breve G)\).
 \end{proof}
 
 \subsection{The Levi Dynkin diagram}
@@ -1774,17 +1864,17 @@ The resulting Dynkin diagram is the Dynkin diagram of the semisimple Levi factor
 Take an irreducible flag variety \((X,G)\).
 The Dynkin diagram of its associated cominuscule subvariety \((\breve X,\breve G)\) is drawn by taking that of \((X,G)\), cutting out all crossed nodes and adding one new crossed node (which is then the only crossed node), and perhaps adding some edges from the new crossed node to some other nodes.
 That crossed node has an edge (of multiplicity to be determined in section~\ref{sec:edge.mult}) drawn to an uncrossed node just when that uncrossed node has its label appearing on an edge of the box going up from the lowest box root \(\breve\alpha\).
-The resulting Dynkin diagram has precisely one component with a crossed node, the Dynkin diagram of the associated cominuscule subvariety, consisting precisely of the new crossed node and the uncrossed nodes whose labels arise along the edges of the box.
+The resulting Dynkin diagram has precisely one component with a crossed node.
+That component is the Dynkin diagram of the associated cominuscule subvariety. It consists precisely of the new crossed node and the uncrossed nodes whose labels arise along the edges of the box.
 \end{lemma}
 \begin{proof}
 Every Dynkin diagram is drawn by taking the nodes to represent the simple roots.
 Edges appear precisely when two roots have root spaces with nonzero bracket.
 
-By lemma~\vref{lemma:box.roots}, every \(P\)-compact root is a \(P'\)-compact root and vice versa. 
-The \(\breve P\)-compact roots are precisely those \(P\)-compact roots which are differences of box roots, i.e.\ which appear as labels in the edges of the box.
+By lemma~\vref{lemma:box.roots}, the \(\breve P\)-compact roots are precisely those \(P\)-compact roots which are differences of box roots, i.e.\ which appear as labels in the edges of the box.
 All other \(P\)-compact roots are perpendicular to the box roots, forming a perpendicular root system, acting trivially on \(\breve X\), hence perpendicular to the \(\breve G\)-roots.
 
-By lemma~\vref{lemma:associated.cominuscule}, \((\breve X,\breve G)\) is irreducible cominuscule.
+By lemma~\vref{lemma:associated.cominuscule}, \((\breve X,\breve G)\) is an irreducible cominuscule flag variety.
 So it has precisely grades \(-1,0,1\).
 So it has at least one \(\breve G\)-simple root not of grade zero, so of grade one.
 
@@ -1801,17 +1891,18 @@ The \(P\)-compact roots perpendicular to all of the box roots generate a root sy
 The crossed \((X,G)\)-nodes do not appear in the \((\breve X,\breve G)\)-Dynkin diagram, because we have all of the \((\breve X,\breve G)\)-nodes drawn.
 Consider the \((\breve X,\breve G)\)-nodes which are not crossed.
 These are the simple \((X,G)\)-roots which arise as labels in the box.
-In the \((\breve X,\breve G)\)-Dynkin diagram, by the standard rules of construction of Dynkin diagrams, the new crossed node (corresponding to \(\breve\alpha\)) is connected to another node \(\alpha_j\) (hence to an uncrossed node) precisely when their root vectors have nonzero bracket, so precisely when the root \(\breve\alpha\) has an edge labelled by \(j\).
+By the standard rules of construction of Dynkin diagrams, in the \((\breve X,\breve G)\)-Dynkin diagram, the new crossed node (corresponding to \(\breve\alpha\)) is connected to another node \(\alpha_j\) (hence to an uncrossed node) precisely when their root vectors have nonzero bracket.
+This occurs precisely when the root \(\breve\alpha\) has an edge labelled by \(j\).
 \end{proof}
 \begin{example}
-If the Dynkin diagram of \((X,G)\) is:
+Suppose that the Dynkin diagram of \((X,G)\) is:
 \[
 \begin{tikzpicture}
 \hasse[three D=false,attach Dynkin diagram=true]B{****x*x*}
 \fill[draw=black,gray,opacity=.25] (9;4) circle (5pt);
 \end{tikzpicture}
 \]
-then the Dynkin diagram of \((\breve X,\breve G)\) is given by
+Then the Dynkin diagram of \((\breve X,\breve G)\) is
 \[
 \begin{dynkinDiagram}[name=Levi,labels={1,2,3,4}]A4
 \node (crossedRoot) at ($(Levi root 4)+(.3cm,0)$) {};
@@ -1858,7 +1949,9 @@ But the \(G_2\)-flag varieties are not cominuscule, by the classification of com
 \end{proof}
 \subsection{Symmetry of the box}
 Soon we will finish proving the correctness of our algorithm to find the Dynkin diagram of the associated cominuscule subvariety of a flag variety.
-That algorithm will take advantage of a symmetry of the box which the reader can spot immediately in the pictures: we will prove that there is a graph isomorphism taking the highest root (at the top of the box) to the lowest box root, and interchanging the labels on the Dynkin diagram.
+The reader can spot immediately in the pictures that there is a graph isomorphism taking the highest root (at the top of the box) to the lowest box root, and interchanging the labels on the Dynkin diagram.
+We will prove this.
+Our algorithm will take advantage of that symmetry of the box.
 \begin{example}
 Taking the \(B_8\)-flag variety
 \[
@@ -1867,7 +1960,7 @@ Taking the \(B_8\)-flag variety
 \fill[draw=black,gray,opacity=.25] (9;4) circle (5pt);
 \end{tikzpicture}
 \]
-we can turn the box upside down, interchanging labels according to the symmetry reversing the direction:
+Turn the box upside down, interchanging labels according to the symmetry reversing the direction:
 \[
 \dynkin[label]A 4 \leftrightarrow \dynkin[backwards,label]A 4
 \]
@@ -1877,15 +1970,16 @@ of the \(\breve P\)-compact roots.
 For the \(A_8\)-flag variety \dynkin A{***x*x**},
 \hasseDiagrams{A{***x*x**}}
 the symmetry of the box, turning it around \(\ang{180}\), comes from the left-right symmetry of the two triangles along the bottom.
-We can see that the associated cominuscule subvariety is the Grassmannian, given by throwing away roots \(4,5,6\) and the components of the Hasse diagram which contain them.
+The associated cominuscule subvariety is the Grassmannian, given by removing roots \(4,5,6\) and the components of the Hasse diagram that contain them.
 \end{example}
 
-To compute the Dynkin diagram of the associated cominuscule subvariety \((\breve X,\breve G)\) of a flag variety \((X,G)\), we need to knock out edges from the Hasse diagram of \(G\).
-This requires some computation.
-We will use this symmetry to speed up the computation by not computing the Hasse diagram, working directly from the Dynkin diagram.
+To compute the Dynkin diagram of the associated cominuscule subvariety \((\breve X,\breve G)\) of a flag variety \((X,G)\), we need to remove edges from the Hasse diagram of \(G\).
+This requires computation of the Hasse diagram.
+We will use this symmetry to avoid calculating the Hasse diagram, working directly from the Dynkin diagram.
+The result will become obvious by eye without calculation.
 
 \subsection{Outer automorphisms}
-Recall that each of the Dynkin diagrams \(A_r,D_r,E_6\) have graph automorphisms Bourbaki \cite{Bourbaki:1975} Chapter~VIII, section~5:
+Recall that each of the Dynkin diagrams \(A_r,D_r,E_6\) have graph automorphisms (Bourbaki \cite{Bourbaki:1975} Chapter~VIII, section~5):
 {
 \NewDocumentCommand\Alab{m}%
 {%
@@ -1904,7 +1998,7 @@ Recall that each of the Dynkin diagrams \(A_r,D_r,E_6\) have graph automorphisms
 \item
 \(D_4\) has automorphism group the six permutations of its \(3\) ends, 
 \item
-\(D_{r\ge 5}\) has automorphism group generated by permuting \(r-1,r\), ordering the roots of \(D_r\) according to Bourbaki \cite{Bourbaki:2002} pp.~265--290, plate IV:
+\(D_{r\ge 5}\) has automorphism group generated by permuting \(r-1,r\), when we order the roots of \(D_r\) according to Bourbaki \cite{Bourbaki:2002} pp.~265--290, plate IV:
 \[
 \dynkin[edge length=1.2cm,label,label macro/.code={\Dlab{#1}}]{D}{}
 \]
@@ -1915,17 +2009,17 @@ Recall that each of the Dynkin diagrams \(A_r,D_r,E_6\) have graph automorphisms
 \]
 \end{itemize}
 }
-Each nonidentity automorphism is precisely \(-w_0\), where \(w_0\) is the longest word in the Weyl group.
+%Each nonidentity automorphism is precisely \(-w_0\), where \(w_0\) is the longest word in the Weyl group.
 No other connected Dynkin diagram has any automorphism other than the identity \cite{Bourbaki:1975} Chapter~VIII, section~5.
-On the other hand, any other connected Dynkin diagram has \(-w_0\) equal to the identity transformation \cite{Bourbaki:1975} Chapter~VIII, section~5.
+%On the other hand, any other connected Dynkin diagram has \(-w_0\) equal to the identity transformation \cite{Bourbaki:1975} Chapter~VIII, section~5.
 
 Every group acts on itself by conjugation, its \emph{inner automorphisms}.
-The automorphisms of the Dynkin diagram of a semisimple Lie group \(G\) form the quotient of the automorphism group quotienting out the inner automorphisms \cite{Bourbaki:1975} Chapter~VIII, section~5.
+The automorphisms of the Dynkin diagram of a semisimple Lie group \(G\) form the quotient of the automorphism group modulo inner automorphisms \cite{Bourbaki:1975} Chapter~VIII, section~5, \cite{Fulton/Harris:1991} p.~498, proposition D.40.
 We can view the automorphisms as geometrically transforming the Dynkin diagram, or just as permutations of the labels of a labelled Dynkin diagram, leaving the nodes of the diagram in fixed locations on the paper.
-We will picture them as relabelling.
+We will view them as relabelling.
 
 From the Hasse diagram, as above, remove the edges corresponding to those crossed roots.
-Each connected component is an irreducible module of the semisimple Levi factor, clearly, since it is connected.
+Each connected component is clearly an irreducible module of the semisimple Levi factor.
 
 Every finite dimensional holomorphic \(G_{0,ss}\)-module is a direct sum of irreducible holomorphic \(G_{0,ss}\)-modules, each a highest weight module.
 The automorphisms of the Levi Dynkin diagram act on \(G_{0,ss}\) by interchanging root labels, hence equivariantly on all holomorphic \(G_{0,ss}\)-modules, by interchanging the labels which tell us which root any two neighboring weights differ by.
@@ -1934,7 +2028,7 @@ In particular, the automorphism group of the Levi Dynkin diagram acts on the box
 Take the Hasse diagram of a cominuscule flag variety.
 The box of that Hasse diagram, as a graph, admits an involution that maps the highest root to the lowest root, and that maps edges to edges (while turning them upside down, i.e.\ reversing their arrows as directed edges), and that changes the labels of the edges according to some (possibly trivial) involution of the Levi Dynkin diagram. 
 That automorphism, as applied to the Dynkin diagram of a reducible flag variety, is the product of the automorphisms of the components.
-As applied to the Dynkin diagram of an irreducible flag variety, that automorphism is \(-w_0\) where \(w_0\) is the longest word in the Weyl group of the Dynkin diagram of the Levi factor.
+%As applied to the Dynkin diagram of an irreducible flag variety, that automorphism is \(-w_0\) where \(w_0\) is the longest word in the Weyl group of the Dynkin diagram of the Levi factor.
 \end{lemma}
 \begin{proof}
 We can assume that the cominuscule flag variety is irreducible.
@@ -1951,8 +2045,9 @@ that, removing the crossed node at root \(1\), we have \(D_5\),
 \[
 \dynkin[ordering=Carter,backwards,edge length=.5cm,labels={6,5,3,2,4}] D5
 \] 
-which admits a unique involution interchanging roots \(2\) and \(4\) of \(E_6\).
-Root \(2\) is the unique root going up from the lowest box root, while root \(4\) is the unique root going down from the highest root of the box:
+which admits a unique involution interchanging roots \(2\) and \(4\) of \(E_6\), which also interchanges roots \(3\) and \(6\).
+Root \(2\) is the unique root going up from the lowest box root.
+Root \(4\) is the unique root going down from the highest root of the box:
 \[
 \hasse[ordering=Carter,three D=false] E{x*****}
 \]
@@ -1961,17 +2056,19 @@ We can see directly from the Dynkin diagram
 \[
 \dynkin[ordering=Carter,label]E{x******}
 \]
-that, removing the crossed node at root \(1\), we have \(E_6\), \[
+that, removing the crossed node at root \(1\), we have \(E_6\):
+\[
 \dynkin[ordering=Carter,labels={7,6,4,5,3,2}]E6
 \]
-which admits a unique involution interchanging roots \(2\) and \(7\) of \(E_7\).
+Clearly \(E_6\) admits a unique involution interchanging roots \(2\) and \(7\) of \(E_7\).
 \[
 \hasse[ordering=Carter,three D=false] E{x******}
 \]
 Root \(2\) is the unique root going up from the lowest box root.
 Root \(7\) is the unique root going down from the highest root of the box.
 \item[\(B_r\):]
-By lemma~\vref{lemma:unique.box}, the box is a single path from lowest box root to highest root, and its labels are already symmetric under the graph isomorphism permuting highest and lowest box roots.
+By lemma~\vref{lemma:unique.box}, the box is a single path from lowest box root to highest root.
+Its labels are already symmetric under the graph isomorphism permuting highest and lowest box roots.
 We can apply the identity automorphism.
 \item[\(D_r\):]
 For 
@@ -2144,11 +2241,11 @@ Its root system contains the root system of its associated cominuscule subvariet
 \end{proof}
 
 \begin{example}
-Imagine computing the associated cominuscule subvariety of an irreducible flag variety.
+Consider the Dynkin diagram of the associated cominuscule subvariety of an irreducible flag variety.
 As above, we still have not found out how to attach the crossed node to the Levi Dynkin diagram, if we just look at the Dynkin diagram of the original flag variety.
 Suppose that we somehow found that we needed to attach a double edge.
-By the symmetry in this lemma, would have a root string of length \(2\) coming down from of the highest root.
-Among all Hasse diagrams of simple Lie groups, only a \(C\) Hasse diagram has a root string length \(2\) coming down from its highest root.
+By the symmetry in this lemma, we would have a root string of length \(2\) coming down from the highest root.
+Among all Hasse diagrams of simple Lie groups, only a \(C\) Hasse diagram has a root string of length \(2\) coming down from its highest root.
 So the only irreducible flag varieties \((X,G)\) that have a \(C\)-series associated cominuscule subvariety are \(C\)-series flag varieties.
 \end{example}
 \subsection{Using the symmetry}
@@ -2181,7 +2278,8 @@ It is not too surprising, since the extended Dynkin diagram has as its affine ro
 Summing up, we have proved the main theorem: theorem~\vref{thm:algorithm}.
 
 \section{Freedom}\label{section:freedom}
-In this section, we prove that the associated cominuscule subvariety in any irreducible flag variety is preserved by a subgroup of the automorphisms of the flag variety which is as large as possible subject to an open condition on tangent spaces.
+In this section, we prove that the associated cominuscule subvariety in any irreducible flag variety is preserved by a subgroup of the automorphisms of the flag variety.
+We prove that this subgroup is as large as possible subject to an open condition on tangent spaces.
 This is similar to the theory of the twisted cubic: nondegeneracy of a cubic space curve implies homogeneity, but for the associated cominuscule subvariety, we don't need to constrain its degree.
 \subsection{Defining freedom}
 Suppose that \(X=G/P\) is an irreducible flag variety.
@@ -2209,9 +2307,10 @@ The automorphisms of the smooth part of \(Z\) then form a Lie group acting smoot
 The automorphisms of any finite component generically free complex space form a closed subgroup of that Lie group, hence also a Lie group acting smoothly on each smooth stratum.
 The associated cominuscule subvariety is a natural object to study because:
 \begin{theorem}\label{theorem:freedom}
-The automorphism group of any finite component generically free complex space \(Z\xrightarrow{\varphi}X\) in any irreducible flag variety \(X\) has dimension 
+Take a finite component generically free complex space \(Z\xrightarrow{\varphi}X\) in an irreducible flag variety \(X\).
+The automorphism group of \(Z\) has dimension 
 \[
-\dim G_Z\le \dim G_{\breve{X}}
+\dim G_Z\le \dim G_{\breve{X}}.
 \]
 If \(Z\) is irreducible, the following are equivalent:
 \begin{itemize}
@@ -2232,12 +2331,14 @@ Before we can prove theorem~\ref{theorem:freedom} and theorem~\vref{theorem:lots
 \subsection{Root systems}
 We use notation and terminology from \cite{Knapp:2002}.
 Pick a point \(x_0 \in X\) in a flag variety \((X,G)\) and let \(P := G^{x_0}\).
-Then \(P\) contains a Cartan subgroup \(H \subset P \subset G\), unique up to \(P\)-conjugacy, i.e. a maximal connected abelian subgroup of \(G\) for which \(\LieG\) splits
+Then \(P\) contains a Cartan subgroup \(H \subset P \subset G\), unique up to \(P\)-conjugacy.
+Recall that a Cartan subgroup is a maximal connected abelian subgroup of \(G\) for which \(\LieG\) splits
 \[
 \LieG=\bigoplus_{\aa \in \Roots} \rtsp{\LieG}{\alpha}
 \] 
-into a sum of \(1\)-dimensional holomorphic \(H\)-modules, the \emph{root spaces}, each thus isomorphic to the \(H\)-module of a character \(\alpha \in \check{H} \subset \LieH^{\vee}\) of \(H\);
-these characters \(\aa\) are the \emph{roots}; denote by \(\Roots\) the set of roots.
+into a sum of \(1\)-dimensional holomorphic \(H\)-modules, the \emph{root spaces}, each thus isomorphic to the \(H\)-module of a character \(\alpha \in \check{H} \subset \LieH^{\vee}\) of \(H\).
+These characters \(\aa\) are the \emph{roots}.
+Denote by \(\Roots\) the set of roots.
 
 A root \(\aa\) is \(P\)-\emph{compact} if the root spaces of \(\aa\) and \(-\aa\) belong to \(P\).
 The Cartan subalgebra, together with the root spaces of the \(P\)-compact roots, generate a subalgebra \(\LieGZ \subset \LieP\).
@@ -2276,12 +2377,12 @@ A Chevalley basis in this sense is really only a spanning set, not a basis; if w
 \(\set{\check{\alpha}_i}_{i=1}^r\sqcup\set{e_{\aa}}_{\alpha\in\Delta}\) is a basis of \(\LieH^{\vee}\).
 The \emph{Cartan integers} are
 \[
-A_{ji}:=2\frac{\KillingForm{\alpha_i}{\alpha_j}}{\KillingSquare{\alpha_j}},
+n_{ji}:=2\frac{\KillingForm{\alpha_i}{\alpha_j}}{\KillingSquare{\alpha_j}},
 \]
-and the Cartan matrix is the integer matrix of the transposed entries \(A=\left(A_{ij}\right)\), with inverse matrix \(A^{-1}=(A^{ij})\).
+and the Cartan matrix is the integer matrix of the transposed entries \(C=\left(n_{ij}\right)\), with inverse matrix \(C^{-1}=(C^{ij})\).
 The \emph{fundamental weights} are
 \[
-\varpi^i:=A^{ij}\alpha_j.
+\varpi^i:=C^{ij}\alpha_j.
 \]
 
 \subsection{Dual bases}
@@ -2518,8 +2619,13 @@ The roots \(\mn\bb,\cc\) form a basis for a rank \(2\) root system; looking over
 So the sum \(\aa:=\cc+\mn\bb\) is also a \(G\)-root \cite{Serre:2001} p.~29.
 Conversely, by reversing the same steps, if \(\aa\) is a \(P\)-nonminimal root which can be written as \(\aa=\cc+\mn\bb\) with \(N_{\mn\bb\cc}\ne 0\), i.e. \(\mn\bb,\cc\) not perpendicular, then \(\cc\) is a \(P\)-root which is not a \(P'\)-root.
 
-For any such \(\aa,\mn\bb,\cc\): going back to the equations of \(\nabla a^{\aa}_{\mn\bb}\), we see that we can move in the direction of the root vector of \(\cc\), which is a complete vector field as it lies in the fiber of \(Z'\to Z\), i.e. is given by the action of a \(1\)-parameter subgroup of \(P\), and find \(da^{\aa}_{\mn\bb}=-N_{\cc\bb}\), a constant.
-So over every point of \(Z\), we can find a point of \(Z'\) at which \(a^{\aa}_{\mn\bb}=0\); just as in the model, we can arrange that \(a^{\aa}_{\mn\bb}=0\), for every root \(\cc\) which is a \(G\)-root and not a \(G'\)-root, reducing the structure group down from \(P\) to have \(\om{\cc}\) semibasic.
+Take any such \(\aa,\mn\bb,\cc\).
+Going back to the equations of \(\nabla a^{\aa}_{\mn\bb}\), move in the direction of the root vector of \(\cc\).
+This root vector is a complete vector field as it lies in the fiber of \(Z'\to Z\), so it is given by the action of a \(1\)-parameter subgroup of \(P\).
+We find \(da^{\aa}_{\mn\bb}=-N_{\cc\bb}\), a constant.
+So over every point of \(Z\), we can find a point of \(Z'\) at which \(a^{\aa}_{\mn\bb}=0\).
+ Just as in the model, we can arrange that \(a^{\aa}_{\mn\bb}=0\), for every root \(\cc\) which is a \(G\)-root and not a \(G'\)-root.
+ We reduce the structure group down from \(P\) to have \(\om{\cc}\) semibasic.
 At each step when we do this, we lose one dimension, cutting \(Z'\) down to a hypersurface, cut out by the equation \(a^{\aa}_{\mn\bb}=0\).
 The differentials of these equations are linearly independent, so these hypersurfaces intersect transversely.
 
@@ -2750,7 +2856,7 @@ If \(\fl V, \fl W\) are filtered vector spaces over the same partially ordered s
 \[
 \fl[a]{(V\oplus W)}:=(\fl[a]V)\oplus(\fl[a]W)
 \]
-Every linear subspace \(V\subseteq W\) gives a \emph{filtered subspace} \(\fl{V}\subseteq\fl{W}\) by
+Every linear subspace \(V\subseteq W\) determines a \emph{filtered subspace} \(\fl{V}\subseteq\fl{W}\) by
 \[
 \fl[a]{V}:=V\cap\fl[a]{W}.
 \]
@@ -2759,11 +2865,11 @@ The quotient \(\fl{(W/V)}\) has filtration
 \fl[a]{(W/V)}:=\fl[a]{W}/\fl[a]V.
 \]
 \subsection{Changing partial ordering}
-If \(A\xrightarrow{\varphi}B\) is an order preserving map on partially ordered sets, and \(\fl V, \fl W\) are filtered by \(A,B\), a \emph{morphism} \(\fl V\xrightarrow{\Phi}\fl W\) over \(\varphi\) is a collection of linear maps \(\fl[a]V\xrightarrow{\Phi^a}\fl[b]W\) where \(b=\varphi(a)\) so that \(\left.\Phi^a\right|_{\fl[a']V}=\Phi^{a'}\) if \(a\ge a'\) in \(A\).
+If \(A\xrightarrow{\varphi}B\) is an order preserving map on partially ordered sets, and \(\fl V, \fl W\) are filtered by \(A,B\), a \emph{morphism} \(\fl V\xrightarrow{\Phi}\fl W\) over \(\varphi\) is a collection of linear maps \(\fl[a]V\xrightarrow{\Phi^a}\fl[b]W\) where \(b=\varphi(a)\) so that \(\left.\Phi^a\right|_{\fl[a']V}=\Phi^{a'}\) if \(a\le a'\) in \(A\).
 
 If \(A\xrightarrow{\varphi} B\) is an order preserving map on partially ordered sets, and \(\fl V\) is filtered by \(A\), define \(\fl W:=\phi_* \fl V\) by setting \(\fl[b]W\) to be the span in \(V\) of all subsets \(\fl[a]V\) for any \(a\in A\) with \(\varphi(a)\ge b\), but set \(\fl[b]W:=0\) if there is no \(a\in A\) with \(\varphi(a)\ge b\).
 Define a morphism \(\fl V\xrightarrow{\fl\Phi}\fl W\) over \(\varphi\) by \(\fl[a]{\Phi}(v)=v\) for \(v\in\fl[a]{V}\) as a map \(\fl[a]{V}\xrightarrow{\fl[a]{\Phi}}\fl[b]{W}\) with \(b=\varphi(a)\).
-In particular, we can extend any filtered vector space defined on a subset \(A\subseteq B\) of a partially ordered set to one define on the whole set \(B\).
+In particular, we can extend any filtered vector space defined on a subset \(A\subseteq B\) of a partially ordered set to one defined on the whole set \(B\).
 
 If \(A\xrightarrow{\varphi} B\) is an order preserving map on partially ordered sets, and \(\fl W\) is filtered by \(B\), define \(\fl V:=\phi^* \fl W\) by 
 \[
@@ -2780,7 +2886,9 @@ A^+:=\set{a\in A|a\ge 0}.
 The order is determined by the semipositive cone: \(a\ge b\) just when \(a-b\in A^+\).
 (All of our examples will have \(A\cong\Z^n\) a finitely generated abelian group, with distinguished generating set, and order by making the semipositive cone be the finite sums of the distinguished generators.
 For example, if \(a,b,c\) are distinguished generators then \(a+b\) is incomparable to \(c\).)
-Conversely, if \(A\) is a group and \(A^+\subseteq A\) is a subset then \(A\) is an ordered group with \(A^+\) as its semipositive cone if and only if \(A^+\) is closed under addition, contains \(0\), and, for any \(a\in A^+\), \(-a\in A^+\) if and only if \(a=0\).
+
+Conversely, suppose that \(A\) is a group and \(A^+\subseteq A\) is a subset.
+Then \(A\) is an ordered group with \(A^+\) as its semipositive cone if and only if all of the following hold:\(A^+\) is closed under addition, contains \(0\), and, for any \(a\in A^+\), \(-a\in A^+\) if and only if \(a=0\).
 
 Henceforth we will only filter or grade by an ordered group.
 \subsection{Filtering by ordered groups}
@@ -2827,7 +2935,7 @@ Hence we define
 \[
 \lb{x}{y}:=\lb{X}{Y}+\left<\fl[c]{\LieG}\right>_{c>a+b}, 
 \]
-clearly an antisymmetric bilinear map.
+an antisymmetric bilinear map.
 The Jacobi identity in \(\agr\LieG\) follows from the Jacobi identity in \(\fl{\LieG}\).
 If \(\fl\LieG\) is a filtered Lie algebra and \(a\in A\) and \(a\ge 0\) then \(\fl\LieG_{\ge a}\subseteq\fl\LieG\) is a filtered subalgebra.
 Similarly, as defined above, \(\fl{\LieG_+}\) is the filtered Lie algebra with 
@@ -2880,7 +2988,7 @@ for \(A\in\fl\LieG\), \(v\in\fl V\), \(w\in\fl W\).
 \subsection{Augmentation}
 An \emph{augmented ordered group} \(A\) is an ordered group with a group epimorphism \(A\to\Z\), denoted
 \[
-a\in A\xrightarrow{\#}\odeg{a}\in\Z,
+a\in A\xmapsto{\#}\odeg{a}\in\Z,
 \]
 preserving \(\le\).
 In all of our examples below, \(A\) is freely generated by a distinguished set of generators, and we set \(\odeg{a}=1\) on these generators to augment.
@@ -2936,7 +3044,7 @@ and the induced filtered Lie algebra \(\fl\LieG\)
 Note that \(\LieP=\LieG^{\bar{0}}\), so \(\LieP\) is both filtered and graded, and \(\LieG_+\subseteq\LieP\) is a filtered and graded Lie subalgebra.
 The underlying integer filtrations and gradings are by \(P\)-height, so precisely those we discussed in \S\vref{section:filtration}.
 
-In particular, for any flag variety, this gives a filtered \(P\)-module structure to \(\LieG,\LieP,\LieP^{\vee},\LieG/\LieP,\LieG_+=(\LieG/\LieP)^\vee\).
+In particular, for any flag variety, this induces a filtered \(P\)-module structure on \(\LieG,\LieP,\LieP^{\vee},\LieG/\LieP,\LieG_+=(\LieG/\LieP)^\vee\).
 Each \(P\)-module is also a module over the Cartan subgroup, since the Cartan subgroup sits in \(P\).
 We are mostly interested in the flag varieties \((X,G)\) where \(G\) acts effectively on \(X\), which implies that \(G\) is in its adjoint form \(G=\Ad G\).
 In particular, we are not interested in studying phenomena on a flag variety in which it differs from the associated effective flag variety.
